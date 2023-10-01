@@ -336,7 +336,7 @@ triangle:
   @ @ @ @
 @ @ @ @ @
 
-Q.6 Write a C program to print Pascal triangle:
+Q.6 Write a program to print Pascal triangle:
  *			
  * * *				   
  * * * * *			
@@ -346,7 +346,7 @@ Q.6 Write a C program to print Pascal triangle:
  * * * * *
  * * *
  *
-Q.7 Write a C program to print Pascal triangle:
+Q.7 Write a  program to print Pascal triangle:
     
     *
     *
@@ -354,7 +354,7 @@ Q.7 Write a C program to print Pascal triangle:
   * * *
 * * * * *
 * * * * *
-Q.8 Write a C program to print Pascal triangle:
+Q.8 Write a  program to print Pascal triangle:
 
     1
     1
@@ -426,7 +426,7 @@ structure:
     1 2 3 2 1
       1 2 1
         1
-Q.19 Write a C program to print the following
+Q.19 Write a program to print the following
 triangle:
 	  *
         * * *
@@ -434,18 +434,18 @@ triangle:
     * * * * * * *
   * * * * * * * * *
 * * * * * * * * * * *
-Q.20 Write a C program to print Floyd's triangle:
+Q.20 Write a program to print Floyd's triangle:
 1
 2 3
 4 5 6
 7 8 9 10
-Q.21 Write a C program to print Pascal triangle:
+Q.21 Write a program to print Pascal triangle:
       1
      1 1
     1 2 1
    1 3 3 1
   1 4 6 4 1
-Q.22 Write a C program to print following character
+Q.22 Write a program to print following character
 triangle:
 A
 B B
@@ -458,14 +458,14 @@ triangle:
     A B C B A
   A B C D C B A
 A B C D E D C B A
-Q.24 Write a C program to print following character
+Q.24 Write a program to print following character
 triangle:
 A B C D E D C B A
   B C D E D C B
     C D E D C
       D E D
         E
-Q.25 Write a c program for following number structure:
+Q.25 Write a program for following number structure:
 1
 2 2
 3 3 3
@@ -475,7 +475,7 @@ Q.25 Write a c program for following number structure:
 3 3 3
 2 2
 1
-Q.26 Write a C program to display the string "INDIA"
+Q.26 Write a program to display the string "INDIA"
 in following fashion:
 I
 IN
@@ -487,7 +487,7 @@ INDI
 IND
 IN
 I
-Q.27 Write a C program to display the following
+Q.27 Write a program to display the following
 character structure:
 A
 BB
@@ -496,35 +496,35 @@ DDDD
 CCC
 BB
 A
-Q.28 Write a C program to display the following number
+Q.28 Write a program to display the following number
 triangle:
 1
 2 2
 3 3 3
 4 4 4 4
 5 5 5 5 5
-Q. 29 Write a C program display the following number
+Q. 29 Write a program display the following number
 structure:
 123454321
  2345432
   34543
    454
     5
-Q.30. Write a C program to display the following number
+Q.30. Write a program to display the following number
 triangle structure:-
     1
    21
   321
  4321
 54321
-Q.31. Write a C program to display the following number
+Q.31. Write a program to display the following number
 triangle structure:
 54321
 4321
 321
 21
 1
-Q.32 Write a C program to print the following number
+Q.32 Write a program to print the following number
 pyramid:
      1
     2 2
@@ -532,7 +532,7 @@ pyramid:
   4 4 4 4
  5 5 5 5 5
 6 6 6 6 6 6
-Q.33 Write a C program to print the following number
+Q.33 Write a program to print the following number
 structure:
      1
     1 2
@@ -540,7 +540,7 @@ structure:
   1 2 3 4
  1 2 3 4 5
 1 2 3 4 5 6
-Q. 34 Write a C program to display the following
+Q. 34 Write a program to display the following
 rhombus symbol structure:
       *
     * * *
@@ -549,7 +549,7 @@ rhombus symbol structure:
   * * * * * 
     * * *
       *
-Q. 35 Write a C program to display the following
+Q. 35 Write a program to display the following
 number rhombus structure:
       1
     2 1 2
@@ -558,7 +558,7 @@ number rhombus structure:
   3 2 1 2 3
     2 1 2
       1
-Q. 36 Write a C program to display the following number
+Q. 36 Write a program to display the following number
 rhombus structure:
       1
     1 2 1
