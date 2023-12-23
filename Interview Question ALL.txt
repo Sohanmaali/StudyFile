@@ -2,6 +2,7 @@
 Exception Handling
 ------------
 1) Explain the concept of chained exceptions in Java.
+Ans. -> one exception class/object will provide more information about exception class/object is called exception chaining
 
 2) What is the purpose of the NullPointerException in Java, and how can you prevent it?
 
@@ -112,8 +113,7 @@ Exception Handling
 55) Arrange the three classes String, StringBuffer and StringBuilder in the order of efficiency for String processing operations?
 Exception Handling
 
-56) Why do we sometime get ConcurrentModificationException during
-iteration?
+56) Why do we sometime get ConcurrentModificationException during iteration?
 
 57) How will you handle InterruptedException in Java?
 
@@ -504,6 +504,227 @@ STRING
 61. How can you remove all the white spaces in a string?
     
 62. Explain String pool in Java?
+
+63. Can we use Switch statement with Strings?
+
+64. 
+
+====================================================
+1. What is a string?
+
+2. What is string handling?
+
+3. In how many ways we can store string data? 4. Why String class is given when char array is already available?
+
+5. Why StringBuffer class is given when we have String class to store string data?
+
+6. What is meaning the immutable & mutable objects?
+
+7. Can we create custom (user defined) immutable object?
+
+8. Why StringBuilder is given when we have StringBuffer?
+
+9. What is the meaning of thread-safe and non-thread safe objects? 10. Can we create thread-safe and non-thread safe objects?
+
+11. Is String object thread safe?
+
+12. What is the definition of String, StringBuffer, and StringBuilder?
+
+13. What is the relation between Sting, StringBuffer and StringBuilder classes?
+
+14. Why String, StringBuffer classes are created as siblings, why not with IS-A relation?
+
+15. Why StringBuffer, StringBuilder classes not created with IS-A relation?
+
+15. Can we assign string literal directly to StringBuffer or type variables?
+
+StringBuilder
+
+17. How can we store sting literal in StringBuffer and StringBuilder objects?
+
+String & Object Sipation Interview Questions 
+
+18. What are the different ways to construct String Object? 
+
+19. What are the differences in creating String object using the String literal and using the constructor?
+
+20. How many objects are created in "literal" assignment & in constructor assignment?
+
+21. When should we use constructor for creating String object? 22. On what basis can we count how many string objects are created in JVM?
+
+String pooling interview questions
+
+23. What is String Pooling; and Why String pooling?
+
+24. Where String literal objects are stored and where String constructor objects are stored?
+
+25. Draw JVM Architecture to show complete memory structure of String objects creation in both approaches? 
+
+26. Why String object is created as immutable?
+
+27. Why String poling is implemented for String objects only? 28. Is String referenced variable immutable?
+
+29. How can we make string reference variables as immutable?
+
+String Constant Pool Area (SCPA) interview questions 
+
+30. What is a String Constant Pool Area?
+
+31. Who creates SCPA object & When?
+
+32. Is SCPA created separately for every cl ass in the project or is it created one per JVM? Prove your answer with a program?
+
+33. Is SCPA eligible for of garbage collection, if not why? 
+
+34. Is String literal object eligible for gc, if not why?
+
+35. Is String constructor object eligible for gc, if yes why?
+
+36. Prove that string literal object is not eligible for gc even if it is unreferenced explicitly?
+
+String class constructors interview questions
+
+37. How many important constructors do we have in String class?
+ 
+38. What happen if we pass null as argument to String class 
+
+39. Can we create null string object? 
+
+40. Can we create null string referenced variable?
+
+41. Can we create empty string object?
+
+42. Are both empty string & null String Object Same
+
+Custom Immutable and mutable objects creation interview questions
+
+43. What is immutable and mutable object? 
+
+44. Given some of the inbuilt immutable & mutable objects?
+
+45. Can we develop custom immutable object, if yes what is the procedure?
+
+46. Can we develop immutable variable, if yes how?
+
+47. Assume we called a mutator method on an immutable object. Then it definitely returns a new object with result. Then what is the output we get in the below cases: 	
+	Case #1: Returned object is not assigned to any variable
+	Case #2: Returned object is assigned to new referenced variable 
+	Case #3: Returned object is assigned to the same current object's variable
+
+String operation methods interview questions
+
+48. How can we find is string empty or not?
+
+49. How can we find length of the String?
+
+50. What is the difference between length & length()?
+
+51. What is printed when we print String object, is it String@hashCode or its data?
+
+52. In how many ways we can compare string objects? 53. How String Objects must be compared for equality?
+
+54. What is meant by comparing string objects lexicographically, how it can be done?
+
+55. When should we compare string objects for equality and lexicographically?
+
+56. How can we read characters from the String? 
+
+57. How can we find the character case in the String object?
+
+58. How can we find the position of a character or sub String?
+
+59. If the given character is not available what value is returned from indexOf() method?
+
+60. How can we find a character or a substring in the given string?
+
+61. How can we find the string is startsWith or endsWith the given substring?
+
+62. What is the difference between equals, contains, startsWith and
+
+endsWith methods? 63. How can we retrieve substring from the String?
+
+64. If the start index and end index is same then what is returned from substring() method?
+
+65. What will be returned from substring method if startIndex > endIndex? 
+
+66. How can we convert primitive values and objects to String object?
+
+67. What is the limitation of String class object?
+
+68. What is meant by concatenation, how Strings can be concatenated?
+
+69. How can we convert string case to lower and upper case in the String?
+
+70. How can we replace a character or substring in this String? 
+
+71. How can we remove string leading and trailing spaces? 
+
+72. When we call concat()/toLowerCase()/toUpperCase()/replace() & trim() methods, if current string object data is modified, will the result is stored in this current string object (or) will it return in the new object?
+
+73. How can we split string into tokens?
+
+74. How can we spit given string into words?
+
+75. How can we find number of words in a string? 
+
+76. Write a program to print number of characters & words present in a given string?
+
+77. What is returned in String[], if we pass empty string as argument to split method?
+
+78. When is empty string is included as token in string[]?
+
+79. What is returned in String[], if the argument string is not present in current string
+
+80. What is returned in String[], if the we pass same current string as argument?
+
+81. Write a program to reverse words in the given string?
+
+82. What are the operations we cannot perform on string using String object?
+
+StringBuffer, StringBuilder classes interview questions
+
+83. What is definition of StringBuffer, and StringBuilder? 
+
+84. What is need of StringBuffer, and StringBuilder?
+
+85. What is the difference between StringBuffer & StringBuilder class?
+
+86. When should we choose StringBuffer class & StringBuilder class?
+
+87. What are the special operations can be performed on StringBuffer; those cannot be applled on String?
+
+88. In how many ways we can create StringBuffer object? 89. In SB object creation what will happen if we pass -ve number or null as arguments?
+
+90. What is the default capacity of String, StringBuffer and StringBuilder? 91. What is the meaning of default capacity?
+
+92. What is the default capacity of StringBuffer, If its object is created 
+	1) using StringBuffer() constructor?
+	2) Using StringBuffer(String) constructor?
+
+93. What is the difference between capacity and length?
+
+94. How can we find StringBuffer capacity and length?
+
+95. How can we append, insert, delete, reverse, & override characters in the StringBuffer?
+
+96. What happened when we append/insert characters more than its capacity? 
+
+97. How much the capacity is increased when size is greater than current capacity?
+
+98. In the SB capacity incrementing formula ((CurrentCapacity *2)+2) Why the SB incremented capacity result is added by 2?
+
+99. How can we control StringBuffer capacity?
+
+100 What is the use of ensure Capacity() method?
+
+102. What is the use of crimToSize() method?
+
+102. What is the use of setLength() method? 
+
+103. What are the 7 differences between String and StringBuffer?
+
+104. What is the right design to store and manipulate string data?
+
 =================================================================================================================================
 =================================================================================================================================
 =================================================================================================================================
