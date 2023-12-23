@@ -1,5 +1,6 @@
+------------
 Exception Handling
-
+------------
 1) Explain the concept of chained exceptions in Java.
 
 2) What is the purpose of the NullPointerException in Java, and how can you prevent it?
@@ -373,3 +374,139 @@ Explain various casus exist in kry/catch/finally execution contr?
 54. What is the difference between exception & System.exit(); 
 
 55. What is the difference between try-catch & if-else?
+
+=================================================================================================================================
+=================================================================================================================================
+=================================================================================================================================
+------------
+STRING
+------------
+1. What is the meaning of Immutable in the context of String class in Java?
+  
+2. Why a String object is considered immutable in Java?
+  
+3. How many objects does the following code create?
+ 
+4. How many ways are there in Java to create a String object?
+   
+5. How many objects does the following code create?
+  
+6. What is String interning?
+ 
+7. Why Java uses the String literal concept?
+   
+8. What is the basic difference between a String and StringBuffer object?
+
+9. How will you create an immutable class in Java?
+  
+10. What is the use of toString() method in Java?
+   
+11. Arrange the three classes String, StringBuffer, and StringBuilder in the order of efficiency for String processing operations?
+   
+12. What is a StringJoiner in Java 8?
+    
+13. How can you convert an array of bytes to String?
+    
+14. What is the difference between StringBuffer and StringBuilder?
+    
+15. Which Can we use String in the switch case statement in Java?
+   
+16. You have a character array and a String. Which one is more secure to store sensitive data (like password, date of birth, etc.)?
+    
+17. To store sensitive data (like password, date of birth, etc.), how can you check if a String is a number by using regular expression?
+    
+18. What is the difference between the expressions String s = "Temporary" and String s = new String("Temporary ")? Which one is better and more efficient?
+   
+19. Why is the String class Immutable or Final in Java?
+    
+20. Difference between Character Constant and String Constant in java?
+    
+21. What is the purpose of the "StringBuilder" class in Java?
+    
+22. What is the purpose of the "StringBuffer" class in Java?
+    
+23. What is String in Java?
+
+24. Is String a class or data type in Java?
+
+25. How many ways can we create string object in Java?
+
+26. What is String Constant Pool in Java?
+
+27. Why string object is immutable in java?
+
+28. What is the superclass of the string class in Java?
+
+29. What is String literal in java? How is string literal stored in memory?
+
+30. Why Java uses the concept of string literal?
+
+31. How are String literals cleared from String constant pool?
+
+32. What are the drawbacks of creating a large number of string literals in the memory pool?
+
+33. How many objects will create for the identical string?
+
+34. Can we use reflection to clear a string object?
+
+35. Why is the String class declared as final in Java?
+
+36. How many interfaces are implemented by String class?
+
+37. Is String thread-safe in Java?
+
+38. What is the disadvantage of the String class in Java?
+
+39. Is String a wrapper class?
+
+40. How to compare two Strings in Java?   
+
+41. What is the difference between `==` (double equal operator) and the `equals` method in Java?
+
+42. What are the best ways to concatenate strings in Java?
+
+43. How to check if a string is empty or not?     
+
+44. How to get a character or multiple characters from a string in Java?
+
+45. What are the most widely used methods of the Java String class?
+
+46. Why StringBuffer objects in Java are mutable?
+
+47. What is the difference between length and capacity in Java StringBuffer?
+
+48. When will you use StringBuffer if String class is already available?
+  
+49. What are the most widely used methods of StringBuffer class in Java?
+    
+50. Why do we need StringBuilder in Java?
+    
+51. Which class is more preferable: StringBuffer or StringBuilder? Why?
+    
+52. When should you use StringBuilder?
+
+53. What is an immutable class in Java?
+
+54. What is a mutable class and mutable object in Java?
+
+55. How to create/make an Immutable Class in Java?
+
+56. What is the use of toString() method in Java?
+
+57. What is the purpose of intern() method in Java?
+
+58. What is the purpose of format() method in Java String?
+
+59. Is it possible to convert String to Int and vice versa in Java?
+
+60. What is the split() method? Can we split a string in Java?
+
+61. How can you remove all the white spaces in a string?
+    
+62. Explain String pool in Java?
+=================================================================================================================================
+=================================================================================================================================
+=================================================================================================================================
+-------------------
+MULTITHREADING
+-------------------
