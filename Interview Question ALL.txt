@@ -827,3 +827,206 @@ Non-Daemon?
 
 54) What Is ThreadLocal?
 -----------------------------------------
+-----------------------------------------
+1. What is a thread?
+
+2. What is multithreading; explain when should we develop multithreading?
+
+3. What are the advantages of multithreading? 4. Give different real world applications of multithreading?
+
+5. What is the difference between sequential, parallel and concurrent flow of execution?
+
+6. What is the difference between multitasking and multithreading? 
+
+7. How many threads are created by default in JVM?
+
+8. Is Java by default multithreaded programming language?
+
+9. How can we execute multiple tasks concurrently- 
+
+10. What are the different ways we have to create custom thread?
+
+11. What are the steps we must follow in creating custom thread extending from Thread class and implementing from Runnable interface?
+
+12. Why custom thread implementing from Runnable interface approach is recommended?
+
+13. What is the use of start() method & run() method?
+
+14. When we call start method, will thread execution started immediately?
+
+15. How can we execute logic in custom thread & main thread? 
+
+16. What will happen if we do not override run() method? 
+
+17. What is the mandatory way to override run() method in the below cases ?
+	1) When extends from Thread class? 
+	2) When implementing from Runnable interface?
+	3) extends from Thread class & also implementing Runnable interface 
+
+18. Can we overload run() method, then will it be executed? 
+
+19. If we only overload run() method, in which case we get CE?
+	1) Subclass is derived from Thread class? 
+	2) Subclass is derived from Runnable interface?
+	3) Subclass is derived from Thread class & also from Runnable interface?
+
+20. Can we override start() method in Thread subclass? 
+	1) If we override start() method, will custom thread created?
+	2) What is the right design to override start() method? 
+	3) What is situation force us to override start() method?
+
+21. What is the meaning of single thread model and multithread model application? 
+
+22. Can we call run method directly, if so what will happen?
+
+23. What is the difference between th.start() & th.run()?
+
+24. Can we call run and start method both at a time, if so what will happened?
+
+25. Is it possible to start a thread more than once? 
+
+26. How can we create multiple custom threads? 
+
+27. Explain lifecycle phases of a thread?
+
+28. What is the meaning of active thread & live thread?
+
+29. How can we find how many active threads exist in JVM? 
+
+30. How can we find a given thread is live thread or not? 
+
+31. we call yield() method in which state thread will enter?
+
+32. What are the algorithms used in Threads execution process?
+	1) Will a newly born thread enter into running state directly? 
+	2) From block state will thread directly enter into running state?
+
+33. What is thread priority?
+	1) What is the default priority of every new thread?
+	2) What is the priority of main thread?
+	3) Why every thread default priority is 5?
+	4) What is the range of thread priority?
+	5) How can we get & set thread's priority?
+	6) What will happen when we set thread priority to 15?
+	7) If two threads have different priority which thread will	execute first?
+	8) If two threads have same priority which thread will execute first? 
+	9) When a new thread is born, how can we start its execution immediately?
+
+34. Explain thread class constructors Thread() & Thread(String)? 
+
+35. What is the default name of the thread?
+	1) How can we get thread name? 
+	2) What are the different ways we can change the default name of the thread?
+
+36. Can we change name & priority of thread after it is started? 
+
+37. What is the meaning of currently running thread & current thread object?
+	1) How can we get currently running thread reference? 2) In the below cases which thread object reference is return
+		i. Thread.currentThread() is placed in main method
+		ii. Thread.currentThread() is placed in run() method 
+		iii. Thread.currentThread() is placed in m1() method
+	3) If we place th.run() method call in main method, what is the currently running thread object & current thread object of run() method?
+	4) What is the output printed for the below statements in run() method when we call run() method from main method 
+		i. Thread.currentThread().getName() 
+		ii. this.getName();
+	5) Can we change main thread name & priority, write code for it? Text 
+	6) Write a program to prove static block is executed in main thread?
+
+38. What is the meaning of thread group?
+	1) What is the default group?
+	2) How can we get thread group name?
+	3) How can we create our own group for custom threads?
+
+39. What is printed when a thread class object is printed? 
+
+40. How many types of threads we can create in JVM?
+	1) What is a Non-daemon daemon thread? 
+	2) What is a Daemon thread?
+	3) JVM wait for which thread to complete? 
+	4) Why main thread is a non-daemon thread?
+	5) Why gc is a daemon thread? 
+	6) Why every custom thread is created as non-daemon thread?
+	7) How can we create a custom thread as daemon thread?
+	8) What is the rule in calling setDaemon() method?
+	9) Is it possible to change the demon property after starting thread?
+	10) If we create custom thread as daemon can we guarantee its full execution?
+	11) How can we find the given thread is a daemon or not?
+
+41. What are the different ways to pause thread execution? 		
+	1) How can we pause thread execution to allow other thread to execute?
+	2) What is the difference between yield() & sleep() methods?
+	3) How can we pause a thread execution until some other thread execution is completed? 
+	4) What is the difference between join() & join(5) & sleep(5)?
+	5) Why suspend() & resume() methods are deprecated?
+
+42. Explain the use of below Thread class methods?
+	1) start()  			2) run()
+	3) isAlive() 			4) activeCount()
+	5) setName(String)      6) getName()
+	7) setPriority(int)		8) getPriority()
+	9) currentThread()		10) toString()
+	11) set Daemon(true) 	12) IsDaemon()
+	13) yield()				14) sleep(int)
+	15) join()				16) join (int)
+	17) Interrupt()			18) interrupted()
+	19) isInterrupted()
+
+43. What is synchronization?
+	1) When should we develop synchronization? 
+	2) Explain different applications area of synchronization?
+	3) How can we develop synchronization in Java?
+	4) Synchronized keyword either applied to method or object? 
+	5) What JVM will do when we call synchronized method?
+	6) What is meaning of object lock & class lock?
+	7) When a thread is called as monitor? 
+	8) When will the object is unlocked?
+	9) How JVM will mark an object is locked & unlocked?
+	10) When an object is locked by a thread,
+		i. Can we use it to call synchronized method from other thread? 
+		ii. Can we use it to call non-synchronized method from other thread?
+	11) How can we lock argument object of method? 
+	12) What are the differences between synchronized method &	synchronized block?
+	13) What are the advantages of synchronized block over synchronized method?
+	14) What is the difference in declaring static & non-static method as synchronized?
+	15) Can we define multiple synchronized blocks in a method
+	16) When should we develop multiple synchronized blocks Instead of declaring contestete method as synchronized?
+	17) If threads use different objects, will synchronization applled?	
+	18) What is meaning of thread-safe & non-thread safe objects? 
+	19) How can we develop thread-safe objects?
+	20) Create BankAccount object to solve data corruption problem? 
+	21) Create Train object in multithreading environment to issue thickets?
+	22) What is the difference between volatile & synchronized keywords?
+
+44. What is a deadlock?
+	1) When will we get deadlock situation? 
+	2) What is the keyword causes deadlock?
+	3) What is the difference between deadlock & starvation? 
+	4) Given me different code snippets to get deadlock?
+	5) How can we overcome from deadlock situation?
+
+45. What is Inter thread communication?
+	1) How two thread can communicate? 
+	2) In addition to synchronized method what else we should use?
+	3) What is the use of wait(), notify() & notifyAll() methods? 
+	4) What is the code template to develop inter thread communication? 
+	5) When should we develop two threads with communication?
+	6) Develop code for Producer-Consumer application? 
+	
+46. Why wait, notify & notifyAll are defined in Object class, but not in Thread class?
+
+47. What are the various rules we must follow in calling wait(), notify() & notifyAll()?
+	1) What is the exception we must handle in calling wait() method?
+	2) Can we call these three methods in a non-synchronized method?
+	3) If we call these three methods in a non-synchronized method, Why it leads to exception ation Illegal Monitor StateException 
+	4) Even if notify()/notifyAll() methods are not called how can we bring out the thread from waiting state?
+	5) If we call wait(100), will thread starts its execution immediately after 100 milliseconds?
+	6) What is the difference between wait() & wait(100)? 
+	7) What is the difference between sleep(100), join(100) & wait(100)?
+
+48. What is inline thread?
+
+49. What is the use of ThreadGroup class? 
+
+50. How can we add our threads to our custom thread group?
+
+51. What is the use of ThreadLocal class?
