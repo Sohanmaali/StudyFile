@@ -132,7 +132,7 @@ RuntimeException?
 
 64) Can we create a finally block without creating a catch block?
 
-65) Can we create a finally block without creating a catch block?
+65) can we throw Error object?
 
 66) What are unchecked exceptions in java?
 
@@ -177,6 +177,10 @@ method?
 
 86) Can we create Exception object?
 
+87) 
+
+88) 
+
 =====================================================
 1. what is an exception & exception handler
 
@@ -208,36 +212,22 @@ method?
 15 Can finally catch an exception?
 16. When should we use try/catch, try/finally & try/catch/finally?
 17. Which of the combinations are correct?
-
 	1) Is it possible to place trv/catch, try/finally, try/catch/finally,try/finally/catch?
-
 	2) Is it possible to place try with multiple catches? 
-	
 	3) Is it possible to place try with multiple finally blocks?
-
 	4) Is it possible to place only try, only catch, only finally?
-
 	5) Is it possible to place a statement between try/catch/finally?
-
 	6) Is it possible to place try/catch/finally at class level?
-
 	7) Is it possible to place catch block with String or some other class as parameter?
-
 	8) is it possible to place multiple "try/catch/finally" blocks in the same method?
-	
 	9) Is it possible to place only try with resource? 10) Is it possible to place catch with multiple parameters?
-
 	11) Is it possible to place finally with parameter?
 
 18. What are the rules in placing multiple catch blocks?
 	1) Why do we need to create a multiple catch blocks?
-
 	2) What is the parameter we must use to catch all exceptions using single catch?
-
 	3) Can we place multiple catches in any order?
-
 	4) Can we place multiple catches with same parameter block?
-
 	5) Can we place catch block with parent class before the catch block with child class exception?
 
 19. What are various methods given in Throwable class to print exception message? 
@@ -246,26 +236,23 @@ method?
 	2) What is the difference in printing exception by JVM and printStackTrace()?
 
 	3) Based on the printed message, how can you identify is the program terminated normally or abnormally?
-20. Explain about exception default handler (EDH)?
+	
+20. Explain about default exception handler (EDH)?
 
 21. What is the use of finally block? 
 22. What type of code we will write in finally block?
 
 23 When finally block is not executed?
 
-Explain various casus exist in kry/catch/finally execution contr?
+Explain various casus exist in try/catch/finally execution control?
 
 25. Identify in the below cases will finally is executed or not? 
 	1) exception is not raised in try block?
-
 	2) exception is raised in try block, catch block is matched? 
 	3) exception is raised in try block, catch block is not matched?
-
 	4) exception is raised in try block, catch block is matched, also exception is raised in catch block? 
 	5) If try block has return statement will finally execute?
-
 	6) if catch block has return statement will finally execute?
-	
 	7) try/finally without exception 
 	8) try/finally with exception
 	9) In try block we have System.exit(0) will finally executed?
@@ -279,7 +266,6 @@ Explain various casus exist in kry/catch/finally execution contr?
 	6) From try block value 30 is returned, also value 50 is returned from finally block, then which value is returned to calling method?
 
 27. What is the Inner try/catch block?
-
 	1) How can we catch an exception within the try or catch or finally block?
 	2) The exception that is raised in the catch block, will it be caught by the same catch block?
 
@@ -341,8 +327,8 @@ Explain various casus exist in kry/catch/finally execution contr?
 48. What are various rules on checked exception? 
 	1) We throw a checked exception and if we do not report or catch it then what will happen, will leads to CE or RE?
 	2) Without throwing a checked exception from a try block, can we place a catch block with checked as parameter? 
-49. What are the various rules in overriding a method if it is throwing a checked exception
 
+49. What are the various rules in overriding a method if it is throwing a checked exception
 	1) Can we ignore throwing this exception?
 	2) Can we throw the same checked exception?
 	3) Can we throw its subclass exception?
@@ -731,3 +717,113 @@ StringBuffer, StringBuilder classes interview questions
 -------------------
 MULTITHREADING
 -------------------
+1) What Is Multi Tasking?
+
+2) What Is Multi ThreadingAnd Explain Its Application Areas?
+
+3) What Is Advantage Of Multi Threading?
+
+4) When Compared With C++ What Is The Advantage In Java With Respect To Multi Threading?
+
+5) In How Many Ways We Can Define A Thread?
+
+6) Among Extending Thread And Implementing Runnable Which Approach Is Recommended?
+
+7) Difference Between t.start() And t.run()?
+
+8) Explain About Thread Scheduler?
+
+9) If We Are Not Overriding run() What Will Happen?
+
+10) Is It Possible Overloading Of run()?
+
+11) Is It Possible To Override a start() And What Will Happen?
+
+12) Explain Life Cycle Of A Thread?
+
+13) What Is The Importance Of Thread Class start()?
+
+14) After Starting A Thread If We Try To Restart The Same Thread Once Again What Will Happen?
+
+15) Explain Thread Class Constructors?
+
+16) How To Get And Set Name Of A Thread?
+
+17) Who Uses Thread Priorities?
+
+18) Default Priority For Main Thread?
+
+19) Once We Create A New Thread What Is Its Priority?
+
+20) How To Get Priority From Thread And Set Priority To A Thread?
+
+21) If We Are Trying To Set Priority Of Thread As 100, What Will Happen?
+
+22) If 2 Threads Having Different Priority Then Which Thread Will Get Chance First For Execution?
+
+23) If 2 Threads Having Same Priority Then Which Thread Will Get Chance First For Execution?
+
+24) How We Can Prevent Thread From Execution?
+
+25) What Is yield() And Explain Its Purpose?
+
+26) Is Join Is Overloaded?
+
+27) Purpose Of sleep()?
+
+28) What Is synchronized Key Word? Explain Its Advantages And Disadvantages?
+
+29) What Is Object Lock And When It Is Required?
+
+30) What Is A Class Level Lock When It Is Required?
+
+31) While A Thread Executing Any Synchronized Method On The Given Object Is It Possible To Execute Remaining Synchronized 
+Methods On The Same Object Simultaneously By Other Thread?
+
+32) Difference Between Synchronized Method And Static Synchronized Method?
+
+33) Advantages Of Synchronized Block Over Synchronized Method?
+
+34) What Is Synchronized Statement?
+
+35) How 2 Threads Will Communicate With Each Other?
+
+36) wait(), notify(), notifyAll() Are Available In Which Class?
+
+37) Why wait(), notify(), notifyAll() Methods Are Defined In Object Instead Of Thread Class?
+
+38) Without Having The Lock Is It Possible To Call wait()?
+
+39) If A Waiting Thread Gets Notification Then It Will Enter Into Which State?
+
+40) In Which Methods Thread Can Release Lock?
+
+41) Explain wait(), notify() and notifyAll()?
+
+42) Difference Between notify() and notifyAll()?
+
+43) Once A Thread Gives Notification Then Which Waiting Thread Will Get A Chance?
+
+44) How A Thread Can Interrupt Another Thread?
+
+45) What Is Deadlock? Is It Possible To Resolve Deadlock Situation?
+
+46) Which Keyword Causes Deadlock Situation?
+
+47) How We Can Stop A Thread Explicitly?
+
+48) Explain About suspend() And resume()?
+
+49) What Is Starvation And Explain Difference Between Deadlock and Starvation?
+
+50) What Is Race Condition?
+
+51) What Is Daemon Thread? Give An Example Purpose Of Daemon Thread?
+
+52) How We Can Check Daemon Nature Of A Thread? Is It Possible To Change Daemon Nature Of A Thread? Is Main Thread Daemon OR 
+Non-Daemon?
+
+53) Explain About ThreadGroup?
+
+54) What Is ThreadLocal?
+-----------------------------------------
