@@ -712,6 +712,49 @@ StringBuffer, StringBuilder classes interview questions
 
 104. What is the right design to store and manipulate string data?
 
+
+
+
+
+
+
+2. What is the main difference between String and StringBuffer ?
+
+3. Other than immutability and mutability is there any other difference between String and StringBuffer ?
+	In String .equals( ) method meant for content comparison where as in
+StringBuffer meant for reference comparision .
+
+4. What is the meaning of immutability and mutability?
+
+5. Explain immutability and mutability with an example?
+
+6. What is SCP?
+	A specially designed memory area for the String literals/objects .
+
+7. What is the advantage of SCP?
+	Instead of creating a separate object for every requirement we can create only one object and we can reuse same object for every requirement. This approach improves performance and memory utilization.
+
+8. What is the disadvantage of SCP?
+	In SCP as several references pointing to the same object by using one reference if we are performing any changes the remaining references will be inflected. To prevent this compulsory String objects should be immutable. That is immutability is the disadvantage of SCP.
+	
+9. Why SCP like concept available only for the String but not for the StringBuffer?
+	specially designed memory area like SCP to improve memory utilization and performance. But StringBuffer object is not commonly used object hence specially designed	memory area is not at all required.
+	
+10. Why String objects are immutable where as StringBuffer objects are mutable?
+	In the case of String as several references pointing to the same object, by using one reference if we are allowed perform the change the remaining references will be impacted. To prevent this once we created a String object we can't perform any change in the existing object that is immutability is only due to SCP. But in the case of StringBuffer for every requirement we are creating a separate object will be created by using one reference if we are performing any change in the object the remaining references won't be impacted hence immutability concept is not require for the StringBuffer.
+	
+11. Similar to String objects any other objects are immutable in java?
+	In addition to String objects , all wrapper objects are immutable in java.
+
+12. Is it possible to create our own mutable class?
+	Yes.
+
+13. Explain the process of creating our own immutable class with an example?
+
+14. What is the difference between final and immutability?
+
+15. What is interning of String objects
+
 =================================================================================================================================
 =================================================================================================================================
 =================================================================================================================================
@@ -1346,6 +1389,37 @@ Auto Boxing And Unboxing Interview Questions
 15. Write a program to add two integer numbers without using primitive variables?
 
 16. In place of primitive types, Is it recommended to use wrapper classes in arithmetic operations?
+
+----------------------------------------------------------------
+1. What is Casting? 
+
+2. What are the advantages of Auto Boxing?
+
+3. What is Implicit Casting?
+
+4.What is Explicit Casting?
+
+5. How can you convert a String to a wrapper class?
+
+6. How can you convert a String to a primitive type?
+
+7. When would you need to convert a String to a character array?
+
+8. What is the best way to convert a String to a primitive type value?
+
+9. What do you understand by boxing and unboxing?
+
+10. Is it possible to convert a Double to a Boolean? If yes, then how?
+
+11. Is it possible to convert a string to a boolean? If yes, then how?
+
+12. What’s the difference between parseInt() and valueOf() methods? Which one would you prefer using?
+
+13. Are all wrapper classes immutable?
+
+14.What does the compareTo method do?
+
+15. What happens if there is no matching wrapper class when converting from a primitive to a wrapper class?
 
 
 ================================================================================================================================
