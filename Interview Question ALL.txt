@@ -5,34 +5,61 @@ Exception Handling
 Ans. -> one exception class/object will provide more information about exception class/object is called exception chaining
 
 2) What is the purpose of the NullPointerException in Java, and how can you prevent it?
+Ans. -> Null Pointer Exception is a kind of run time exception that is thrown when the java program attempts to use the object reference that that contains the null value.
 
 3) Explain the difference between Error and Exception in Java.
-
+Ans -> 	* Recovering from Error is not possible.	
+		  We can recover from exceptions by either using try-catch block or throwing exceptions back to the caller.
+		* All errors in java are unchecked type.	
+		  Exceptions include both checked as well as unchecked type.
+		* Errors are mostly caused by the environment in which program is running.	
+		  Program itself is responsible for causing exceptions.
+		* Errors can occur at compile time.
+		* Unchecked exceptions occurs at runtime whereas   
+		  checked exceptions occurs at comile time
+		* They are defined in java.lang.Error package.	 
+		  They are defined in java.lang.Exception package
+		* Examples : java.lang.StackOverflowError, java.lang.OutOfMemoryError	
+		  Examples : Checked Exceptions : SQLException, IOException Unchecked Exceptions : ArrayIndexOutOfBoundException, NullPointerException, ArithmeticException.
+		  
 4) How does the throws clause impact method overriding in Java?
 
 5) Is it possible to throw checked exceptions from a static block?
+Ans. -> In Java, it is not possible to throw checked exceptions directly from a static block. The reason is that a static block is a part of a class's initialization process, and throwing checked exceptions from there could lead to unhandled exceptions at the class level
 
 6) What is the difference between ClassNotFoundException and NoClassDefFoundError?
+Ans. -> ClassNotFoundException occurs when you try to load a class at runtime using Class.forName() or loadClass() methods and requested classes are not found in classpath. Most of the time this exception will occur when you try to run an application without updating the classpath with JAR files.
+NoClassDefFoundError Now dwelling on the next exception that is NoClassDefFoundError occurs when the class was present during compile time and the program was compiled and linked successfully but the class was not present during runtime. It is an error that is derived from LinkageError. Linkage error occurs when a class has some dependencies on another class and the latter class changes after compilation of the former class.
 
 7) Under what circumstances should we subclass an Exception?
 
 8) Write the difference between throw, throws, and throwable in Java.
+Ans. -> Throw: The throw keyword in Java is used to explicitly throw an exception from a method or any block of code. We can throw either checked or unchecked exception. The throw keyword is mainly used to throw custom exceptions.
+        
+		Tgrows: In Java, when a method might encounter specific issues (exceptions) during its execution, it uses the throws keyword in its declaration to inform the calling code about these possibilities. The calling code must then handle these potential exceptions using try-catch blocks or acknowledge them with the throws keyword in its own declaration. This helps in building a structured approach to handle exceptional situations in a program.
+		
+		Throwable: is a super class for all types of errors and exceptions in java. This class is a member of java.lang package. Only instances of this class or it’s sub classes are thrown by the java virtual machine or by the throw statement. The only argument of catch block must be of this type or it’s sub classes. If you want to create your own customized exceptions, then your class must extend this class.
 
-9) What are built-in Exceptions
+9) What are built-in Exceptions?
+Ans. -> Built-in exceptions are exceptions that are pre-defined in Java Libraries. They are the most frequently occurring Exceptions. An example of a built-in exception can be ArithmeticException, it is a pre-defined exception in the Exception class of java.lang package. These can be further divided into 2 types: Checked Exception and Unchecked Exception.
 
 10) Is it possible to throw an Exception inside a Lambda Expression’s body?
+Ans. -> Yes, it is possible to throw an exception inside a lambda expression's body. However, there are some considerations and limitations. In a lambda expression, you can throw a checked exception if the functional interface associated with the lambda declares that it throws that exception.
 
 11) Explain stack trace in Java. Why is it important in exception handling?
+Ans. -> A stack trace, also called a stack backtrace or even just a backtrace, is a list of stack frames. These frames represent a moment during an application’s execution. A stack frame is information about a method or function that your code called. So the Java stack trace is a list of frames that starts at the current method and extends to when the program started.
 
 12) Can we throw multiple exceptions in one throw statement?
+Ans. -> No, in Java, you cannot throw multiple exceptions in a single throw statement. The throw statement is used to throw a single exception at a time. If you need to throw multiple exceptions, you should use multiple throw statements or handle the exceptions individually.
 
 14) What are the differences between StackOverflowError and OutOfMemoryError In Java?
 
 15) What are the benefits of try-with-resources?
 
-16) Explain stack trace in Java. Why is it important in exception handling?
+16) Can we create Exception object? 
+Ans.-> In Java, you can create an object of any class that extends Throwable, which includes both exceptions and errors. The common base class for exceptions is Exception, and you can create instances of subclasses of Exception to represent specific types of exceptions.
 
-17)In Java, what are the differences between a Checked and Unchecked?
+17)In Java, what are the differences between a Checked and Unchecked Exception?
 
 18) What is the base class for Error and Exception classes in Java?
 
@@ -173,8 +200,7 @@ method?
 
 84) In what scenarios, a finally block will not be executed?
 
-85) Can we create Exception object? 
-
+85) 
 86) 
 
 87) 
@@ -184,7 +210,7 @@ method?
 =====================================================
 1. what is an exception & exception handler
 
-2.  What is represented by an exception in Java? 
+2. What is represented by an exception in Java? 
 
 3. What is the super class of all exception classes?
 
@@ -193,10 +219,13 @@ method?
 5. What is the difference between RuntimeException and Exception
 
 6. What is the exception message format printed by JVM?
+Ans. -> When an exception occurs in Java, the Java Virtual Machine (JVM) typically prints a message to the console or log, providing information about the exception. The format of the exception message includes several pieces of information, such as the exception class name, a description of the exception, and sometimes additional details like the file and line number where the exception occurred.
 
 7. What is the reason for raising an exception?
+And. -> Raising an exception is a technique for interrupting the normal flow of execution in a program, signaling that some exceptional circumstance has arisen, and returning directly to an enclosing part of the program that was designated to react to that circumstance.
 
 8. Why program is terminated when an exception is raised? 
+Ans. -> A program terminates when an exception is raised because the program is looking for an exception handler that can handle the specific type of exception. If no handler is found, the program will terminate and an error message will be displayed
 
 9. How can we print user understandable message to take correct value from user?
 

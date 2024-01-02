@@ -1,0 +1,83 @@
+--------------------------
+Serialization 
+--------------------------
+1.. What is Serialization and deserialization?
+
+2. How can we save & restore object data from file?
+
+3. What is the use of ObjectOutputStream & ObjectInputStream classes? 
+
+4. What are the rules we must follow in serialization and in deserialization?
+
+5. When will we get NotSerializableException? 
+
+6. What is the use of java.io.Serializable interface?
+	1) Why Serializable interface does not have methods?
+	2) Why Serializable interface is called marker interface?
+
+7. Explain all steps involved in object serialization?
+
+8. Explain all steps involved in object deserialization?
+
+9. Why file extension in which we are saving object data should be ".ser" can it be ".txt"?
+
+10. What is the information stored in .ser file?
+
+11. When will ois.readObjed() method throws ClassNotFoundException?
+
+12. When will ois.readObject() method throws Invalid ClassException?
+
+
+13. What is the use of serialVersionUID variable?
+	1) What is serialVersionUID, who will create it in class file? 
+	2) On what basis compiler generates serialVersionUID value?
+	3) If we add or remove class members will serialVersionUID value also changed?
+	4) What is the use of serialver command, where is it available?
+	5) For what type of class only serialVersionUID is generated?
+	6) Can we create serialVersionUID variable in a class explicitly? 
+	7) What should we do to complete deserialization successfully even if the class is modified after serialization?
+	8) What is the complete syntax of serialVersionUID?
+	9) Is it possible to remove private, static, final keywords in creating serialVersionUID variable?
+
+14. Assume the variable serialVersionUID is created in the class by programmer, serialization is completed, then will deserialization is complete in the blow cases?
+	1). New variable is added in this object class? 
+	2) Serialized variable is removed from this object class?
+	3) Serialized variable's data type is changed? 
+	4) class is derived from a class
+	5) New method is added
+
+15. What is a transient keyword & what is the use of it?
+	1) How can we stop saving object data?
+	2) To what variables transient keyword is allowed?
+	3) Is there any use of declaring static variable as transient?
+
+16. What are the variables not participate in Serialization and deserialization? 
+
+17. What is the value stored in transient variable & static variable in deserialization?
+
+18. What is the correct procedure to store & read confidential data of an object from file?
+
+19. Let say object has 100 variables, among them how can we save only 10 variables, & among the saved 10 variables how can we read only 5 variables?
+
+20. The meaning of customizing serialization?
+	1) What is the purpose of private writeObject() Text readObject() methods? & private
+	2) What is the purpose of Externalizable interface? 
+	3) What are the differences between Serializable and Externalizable Interfaces?
+	4) Is Externalizable interface a marker interface?
+	5) Explain the use of Externalizable interface methods? 6). Who will execute private writeObject()& write External() methods, at what time?
+	7) Who will execute private readObject() & readExternal() methods, at what time?
+
+21. Explain various steps involved in serializing IS-A relation object?
+	1) If super class is Serializable, will the complete object graph is saved & restored?
+	2) If super class is not Serializable, will the complete object graph is saved & restored? What is the rule we must follow if super class is not Serializable type?
+	3) Why root super class should not be subclass of Serializable interface?
+	4) Why Collection interface is not subclass of Serializable & Cloneable?
+	5) If super class is a Serializable type how can we stop serializing subclass object?
+
+22. Explain various steps involved in serializing HAS-A relation object?
+	1) To serialize an object, is it mandatory that its internal object also should be Serializable type? 
+	2) How can we save an object if its internal object is not Serializable type?
+
+23. How can we save & restore multiple objects from a file? 
+
+24. What are the different ways to create an object?
