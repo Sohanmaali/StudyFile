@@ -1,7 +1,5 @@
 OOP Interview questions
 
-Text Core Java Interview FAQ's
-
 1. What is OOP; Is It a language or technology or technique?
 
 2. Why OOP concepts?
@@ -297,9 +295,7 @@ Variable hiding interview questions
 
 13. At execution time, if we modify super class static variable value in one subclass, is it affected to all other subclasses?
 
-14. At execution time, if we modify super class non-static variable value in
-
-one subclass, is it affected to all other subclasses?
+14. At execution time, if we modify super class non-static variable value in one subclass, is it affected to all other subclasses?
 
 ------------------------------------------------
 Metic hiding & overriding interview questions

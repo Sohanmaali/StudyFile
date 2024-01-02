@@ -1,0 +1,149 @@
+--------------------------------
+Interface Interview Questions
+--------------------------------
+
+1. What is an interface?
+Ans. In Java, an interface is a reference type that is similar to a class. It is a collection of abstract methods. An interface can also contain constants, default methods, and static methods. 
+
+2. What is the use of interface?
+
+3. How can we develop full abstraction?
+
+4. When we have abstract class to declare abstract method, why do we need interface? 
+
+5. When should we choose interface, abstract class, concrete class, & final class? 
+
+6. What are the rules in declaring interface?
+	1) What is the keyword we must use for creating interface? 
+	2) What are the members allowed inside an interface?
+	3) How can we save interface?
+	4) Can we compile interface source file?
+	5) Can we execute interface?
+	6) What are the modifiers allowed to interface?
+	7) Can we declare interface as final & strictfp?
+	8) Can we create interface deriving from other interface? 
+	9) Can we create interface deriving from a concrete class or abstract class?
+		Ans -> an interface cannot directly extend a concrete class or an abstract class. An interface can only extend other interfaces using the extends keyword. It is important to note that Java supports multiple inheritance for interfaces, meaning an interface can extend multiple other interfaces.
+	10) Is it mandatory to declare method as public, abstract in interface? 
+	11) Is it mandatory to declare interface variable as public, static, final?
+	12) Like java.lang.Object, is there any default super interface for every interface?
+	13) What is the default accessibility modifier of interface & its members?
+	14) Can we declare interface method as private or protected? 
+	15) Why interface members are by default public why not protected ?
+	16) Can we create a variable without assigning a value in interface?
+	17) Can we create constructor in Interface?
+	18) Can we create main method in Interface? 
+	19) Can we create static or non-static method in Interface?
+	20) Can we create static variable in Interface?
+	21) Can we create non-static variable in Interface?
+	22) If we create non-static variable in interface, will it leads to CE?
+	23) Can we create Inner class or inner interface?
+	24) Can we instantiate interface?
+	25) Can we create a referenced variable using interface, what is the use of it?
+
+7. What is the rule in creating subclass from an interface?
+	1) What is the keyword we must use in deriving subclass?
+	2) Is it mandatory we must implement all abstract methods of interface?
+	3) When we provide logic to interface methods in subclass, why we must use the word implements why should not use override?
+	4) How can we create a subclass from an interface by not implementing all its methods?
+	5) What is the accessibility modifier we must use in implementing interface method in subclass, why? 
+
+8. What is the meaning of adapter class?
+	1) How can we create adapter class? 
+	2) Is adapter a keyword?
+	3) What are the advantages with adapter class?
+	4) In which package we will find predefined adapter classes?
+
+9. Can we create an empty interface, what is the purpose of it?
+
+10. What is the marker interface?
+	1) What are the predefined marker interfaces?
+	2) What is a custom marker interface?
+	3) Can we create custom marker interface?
+	4) What is the procedure to create custom marker interface?
+
+11. What are the similarities and differences between interface and abstract class?
+
+12. What is a default method in interface (Java 7 enhancement)?
+
+===========================================================================================
+1. What is the difference between an abstract class and an interface?
+An abstract class can have both abstract and non-abstract methods and can be extended by other classes, while an interface only contains abstract method declarations and can be implemented by classes.
+
+2. What is the difference between the "Comparable" and "Comparator" interfaces?
+The "Comparable" interface is used to define a natural ordering for a class by implementing the "compareTo()" method. The "Comparator" interface, on the other hand, provides a way to define custom ordering by implementing the "compare()" method and is independent of the class being compared.
+
+
+3. What is the purpose of the "interface" keyword in Java?
+The "interface" keyword in Java is used to define interfaces, which declare methods that implementing classes must provide. It allows for multiple inheritan
+
+4. What is the purpose of the "instanceof" operator in Java?
+The "instanceof" operator in Java is used to check the type of an object at runtime. It returns a boolean value indicating whether an object is an instance of a particular class or implements a specific interface.
+ 
+5. What is the purpose of interface?
+
+6. What is an interface in Java?
+
+7. Is it allowed to mark an interface method as static?
+
+8. Why an Interface cannot be marked as final in Java?
+
+9. What is a marker interface?
+
+10. What can we use instead of Marker interface?
+
+11. How Annotations are better than Marker Interfaces?
+
+12. What is the difference between abstract class and interface in Java?
+
+13. Does Java allow us to use private and protected modifiers for
+
+14. How can we cast to an object reference to an interface reference?
+
+15. What is Externalizable interface in Java?
+
+16. What is the difference between Serializable and Externalizable interface?
+
+17. What is a Nested interface?
+
+18. Why do we use Static Nested interface in Java?
+
+20.What is a Functional interface in Java 8?
+
+21.What is a Single Abstract Method (SAM) interface in Java 8?
+
+22.How can we define a Functional interface in Java 8?
+
+23.Why do we need Functional interface in Java?
+
+24. Is it mandatory to use @FunctionalInterface annotation to define a Functional interface in Java 8?
+
+25. Can we provide implementation of a method in a Java Interface?
+
+26. What is a Default Method in an Interface?
+
+27. Why do we need Default method in a Java 8 Interface?
+
+28. What is the purpose of a Static method in an Interface in Java 8?
+
+29. Is it possible to have default method definition in an interface without marking it with default keyword?
+
+30.In case we create a class that extends a base class and implements an interface. 
+If both base class and interface have a default method with same name and arguments, then which definition will be picked by JVM?
+
+31.If we create same method and define it in a class , in its parent class
+and in an interface implemented by the class, then definition will be
+invoked if we access it using the reference of Interface and the object of class?
+
+32.Can we access a static method of an interface by using reference of the interface?
+
+33.Is it possible to define a static method in an Interface?
+
+34.What are the main differences between an interface with default method and an abstract class in Java 8?
+
+35. Difference between abstract class and interface ?
+
+36. Explain Java Coding standards for interfaces?
+	1) Interface should start with uppercase letters
+	2) Interfaces names should be adjectives
+37. Example : Runnable, Serializable, Marker, Cloneable

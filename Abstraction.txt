@@ -1,0 +1,127 @@
+-----------------------------------
+Abstraction interview questions
+-----------------------------------
+
+1. What is an abstraction, advantages of abstraction?
+
+2. What is the meaning of hiding implementation details?
+
+3. Is abstraction an OOP principle? 4. In which stage of project lifecycle abstraction is used?
+
+5. How many types of classes we will develop as per abstraction in object design? 
+
+6. What is will be the problem if we do not follow abstraction in an object design?
+
+7. How can we develop abstraction in java?
+
+--------------------------------------
+Abstract Keyword Interview Question
+--------------------------------------
+
+1. What is an abstract keyword?
+
+2. What is the use of abstract keyword?
+
+3. To what programming elements abstract keyword is allowed & not allowed? 
+
+4. Why abstract keyword is not allowed to variable, constructor, final class & enum?
+
+5. What is the difference in declaring method as abstract & class as abstract?
+
+6. What are the modifiers not allowed in combination with abstract keyword?
+
+----------------------------------------
+Abstract Method Interview Questions
+----------------------------------------
+
+1. What is an abstract method?
+
+2. What is the use of abstract method?
+
+3. What are we doing by declaring a method as abstract?
+
+4. In what type of class the abstract method is allowed? 
+
+5. What are the rules we must follow in creating an abstract method?
+	1) Can we create a method without body?
+	2) Can we provide body to abstract method?
+	3) Can we declare abstract method as private, static, final, native, synchronized, strictfp?
+	4) What are the modifiers only allowed to abstract method? 
+	5) Can we use abstract keyword two times? 
+	6) Can an abstract method have return type other than void?
+	7) If abstract method as non-void return type, who will return value?
+	8) Can an abstract method throw exception?
+	9) Can we call abstract method? 
+	10) Can we execute abstract method?
+
+6. In which class abstract method contains its logic?
+
+7. How can we provide choice to subclass in overriding a method?
+
+8. How can we force subclass to override a method?
+
+9. How can we stop overriding a method in subclass?
+
+10. Why we must declare a class as abstract if it contains abstract method?
+
+------------------------------------------
+Abstract Class Interview Questions
+------------------------------------------
+
+1. What is an abstract class?
+
+2. What is the use of abstract class?
+
+3. What are we doing by declaring a class as abstract?
+
+4. When should we declare a class as object? 
+
+5. When should we use abstract class in project?
+
+6. What are the rules we must follow in declaring abstract class?
+	1) Can we declare abstract class as final, strictfp?
+	2) What are the modifiers only allowed to abstract class
+
+7. In addition to abstract method, What are the other members we can create in abstract class?
+
+8. Can we compile & exectite abstract method?
+
+9. Can we instantiate abstract class?
+
+10. Why cannot we Instantiate abstract class?
+
+11. Can we create referenced variable using an abstract class?
+
+12. What is the use of abstract class referenced variable, when we cannot Instantiate it?
+
+13. Can abstract class contain constructor?
+
+14. Why constructor is allowed in abstract class when it cannot be Instantiated?
+
+15. How can we execute non-static members of abstract class?
+
+16. What are the rules we must follow in creating subclass deriving from abstract class?
+	1) Is mandatory to override all abstract methods declared in abstract class?
+	2) How can we create subclass by not overriding some the abstract methods? 
+	3) What is the meaning of concrete subclass?
+
+17. Explain Abstract class's subclass execution flow? 
+	1) When we load subclass will static members executed from abstract class also?
+	2) When we create subclass object will non-static members executed from abstract class also?
+	3) Give me the memory diagram of an abstract class's subclass object?
+
+18 Is it mandatory that abstract class should contain abstract method?
+
+19. Can we declare concrete class as abstract, what is the use of it?
+
+20. Can you give me predefined classes which are declared as abstract without having abstract methods?
+
+21. How should we define a class to allow subclass also to allow stantiation?
+
+22 Bow should we define a class not to allow subclass but should Instantiation? 
+
+23. How should we define a class to allow subclass but not to allow at the instantiation?
+
+24. How should we define a class not to allow subclass and not to allow instantiation?
+
+25. In an abstract class can we declare all its constructors as private?
