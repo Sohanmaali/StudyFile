@@ -1,0 +1,45 @@
+Accessibility Modifiers Interview Questions
+
+1. What is an Accessibility modifler?
+
+2. What is the difference between Accessibility modifiers & accessibility
+
+specifies?
+
+3. How many accessibility modifiers Java supports? 4. What are the different levels of accessibility permission levels?
+
+5.. What the accessibility modifier keywords? 6. Why accessibility modifiers are not allowed for local variables inside a
+
+method?
+
+7. Why private & protected are not allowed to outer class?
+
+8. Can we declare inner class as private or protected or static?
+
+9. What is the default accessibility modifier of class and its members? 10. What is the default accessibility modifier of interface and its
+
+members? 11. How can create a class member to be accessed only in subclass from other package?
+
+Method interview questions
+
+1. What is a method,, What is the use of method?
+
+2. What is the meaning of business logic? 3. Are both method & function same?
+
+4. What is the method creation syntax?
+
+5. Explain all 7 parts of the method creation syntax?
+
+6. What is the difference between method prototype & signature?
+
+7. What is the difference between method parameter & argument? 8. What are the different modifiers allowed to a method?
+
+9. What is the difference between public & static in accessing a method? 10. Can we create a method inside another method?
+
+11. What are the modifiers allowed to a method?
+
+12. What are the different types of methods do we have in java? 1. What are the differences between abstract method &
+
+concrete method?!_ 2. What is a private and non-private method?
+
+3. What is a Static and non-static method?

@@ -1,13 +1,83 @@
+---------------------------------------------
+Types Of Inheritance Interview Questions
+---------------------------------------------
+
+1. How many types of inheritances Java supports? 2. Will Java supports multiple inheritance?
+
+3. What are the keywords we use to develop inheritance?
+
+4. What are the differences between extends & implements? 5. Carve use implements keyword to derive a class from another class?
+
+6. What is the default super class to all java classes?
+
+7. What is single level inheritance? 
+	1) Can we derive a class from another class?
+	2) Can we derive a class from an interface?
+	3) Can we derive an interface from another interface? 
+	4) Can we deriver an interface from another class?
+	5) Is it possible to develop a class without inheritance?
+	6) If we develop single class, is it really single class?
+
+8. What is multi level inheritance? 
+	1) What is the meaning of direct super class? 
+	2) What is the meaning of indirect super class?
+	3) In a subclass super keyword references to which superclass?
+	4) Is it possible to execute indirect superclass method that is overridden in direct superclass?
+	5) If we create single level inheritance, is it really single level inheritance? Text
+
+9. What is hierarchical level inheritance?
+	1) How many subclasses can we develop from a single class?
+	2) As a subclass developer can we stop multilevel inheritance? 
+	3) As a subclass developer can we stop hierarchical inheritance?
+	4) What is the default inheritance you develop unknowingly in your practice?
+	5) Assume you have developed 3 classes A, B, C as normal classes, is there any inheritance?
+
+10. What is hybrid inheritance? 1) What is the default inheritance we develop in project unknowingly?
+
+11. What is multiple inheritance?
+	1) Why Java does not support multiple inheritance with classes? 
+	2) How inheritance will solve multiple inheritance ambiguous problem?
+	3) What is the syntax to create multiple inherence with interfaces?
+	4) Can we derive a class from multiple classes? 
+	5) Can we derive a class from male inheritances?
+	6) Can we derive a class from a diss & interface?
+	7) What is the syntax to derive a class from a class & interface?
+	8) Why extends keyword should use before implements keyword?
+	9) If we derive a class only from interface is it also deriving from a class?
+	10) Why compiler will allow us to cast a class referenced variable to interface even through it is not subclass, where as it is not possible to cast final class variable to interface why? Identify CE in below case:
+	interface A{} 	B b = new B();		Cc = new C();
+	class B{}		A al = b;			A a1 = c;
+	11) Why compiler allow us to call java.lang.Object class method using interface type referenced variable, even though Interface is not a subclass of Object class? For example: A a = null; a.toString(); here we do not get CE? Text
+
+12. Identify is multiple Inheritance is possible in the below cases?
+	1) both Interfaces have a method with same prototype, how many times we must override it?
+	2) both interfaces have a method with same name, but with different parameters
+	3) both interfaces have a method with same signature, but with different return type as below
+		1. return types are primitive types
+		ii. return types are compatible referenced types
+		iii. return types are incompatible referenced types.
+	4) both interfaces have a method with same signature, but with different checked exceptions type 
+	5) both class and interface have method with same prototype, how many times we must override it? 
+	6) both class and interface have a method with same signature but with different accessibility modifiers
+	7) class method is declared as static? 
+
+13. How can we access interface variable in subclass? 
+
+14. How can we solve ambiguous error if both interfaces have a variable with same name?
+
+========================================================================================
 32) What is ‘IS-A ‘ relationship in java?
 ‘is a’ relationship is also known as inheritance. We can implement ‘is a’ relationship or inheritance in java
 using extends keyword. The advantage or inheritance or is a relationship is reusability of code instead of
 duplicating the code.
 Ex : Motor cycle is a vehicle
 Car is a vehicle Both car and motorcycle extends vehicle.
+
 33) What is ‘HAS A’’ relationship in java?
 ‘Has a ‘ relationship is also known as “composition or Aggregation”. As in inheritance we have ‘extends’
 keyword we don’t have any keyword to implement ‘Has a’ relationship in java. The main advantage of
 ‘Has-A‘ relationship in java code reusability.
+
 34) Difference between ‘IS-A’ and ‘HAS-A’ relationship in java?
 IS-A relationship HAS- A RELATIONSHIP
 Is a relationship also known as inheritance Has a relationship also known as composition or

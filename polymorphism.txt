@@ -1,59 +1,312 @@
-QUESTIONS
+------------------------------------------
+Method overloading inerview questions
+----------------------------------------------
+1. What is a method overloading? 
+
+2. When a method is considered as overloading method? 
+
+3. When we should overload a method, what are the advantages?
+
+4. In overloading, why we should create methods with same name, if we create them with different names what will be the problem, will it be there any CE or RE?
+
+5. What are the rules we must follow in overloading method? 
+	1. Is it possible to overload a method with the same parameter?
+	2. Is it possible to overload a method by just changing return type of the method?	
+	3. Is it possible to overload a method with different return type & modifiers?
+	4. Is it possible to overload a static method as non-static method?
+	5. Is it possible to overload a non-static method as static method?
+	6. Is it possible to overload a private method?
+	7. is it possible to overload a final method? 
+	8. Is it possible to overload a method in the same class?
+	9. Is it possible to overload a method in subclass?
+	10. Is it possible to override a overloaded method?
+	
+6. In how many ways we can show differences in parameter in overloading method?
+
+7. On what basis overloaded method execution is resolved? 
+
+8. Identify what is the output in the below cases?
+	1. Assume we have overloaded a m1() method with char & int parameters, then
+		a. for m1('a') call which parameter method is executed? 
+		b. for m1(97) call which parameter method is executed?
+		c. for m1('a'+'b') call which parameter method is executed ?
+		d. for m1((char)'a'+'b') call which parameter method is executed? 
+		e. for m1((char) ('a'+'b')) call which parameter method is executed?
+
+2) What is the output from below program?
+	class Calleelmpl{
+		public void foo(Object o) {
+
+			System.out.println("Object parameter");
+		}
+		public void foo(String s){
+			System.out.println("String parameter");
+		}
+		public void foo(Integer i){
+			System.out.println("Integer parameter");
+		}
+	}
+public class OverloadingMystery(
+	public static void main(String[] bdsvf){}
+
+9. If the given argument types parameter method is not found, Is it leads to CE? 
+
+10. If the given argument is matched with widening parameter type, what will compiler do?
+
+11. Will compiler allow us to call narrow parameter type method? 
+
+12. How can we call narrow parameter method?
+
+13. Identify what is the output frorre below cases?
+	1) Assume we have overloaded m1() method with int & float parameters, then for m1('a') & m1(50L) calls which method is executed?
+	2) Assume we have overloaded m1() method with byte & short parameters, then for m1(5) call which method is executed?
+	3) Assume we have overloaded m1() method with byte & int parameters, then for m1(5) call which method is executed?
+	4) Assume we have m1() method with only byte parameter, What will be the output fro the methd calls m1(5), m1('a') & m1((byte)5), m1((byte)'a')?
+
+14. When will we get ambiguous error in calling overloading methods? 
+	1) What will happen if the method arguments are matched with widening parameters in multiple overloaded methods with different order? 
+	2) Assume we have overloaded m1() method with String & Integer parameters, then for m1(null) which parameter method is executed? 
+	3) Assume we have overloaded a m1() method with Object & String parameters, then for m1 (null) which parameter method is executed?
+
+15 . How compiler will resolve the overloaded method execution, when it is also overloaded & overridden in subclass?
+	1. Assume we called a overload method using subclass type referenced variable, then identify from which class this. method is executed, also identify will you get any CE in the below cases
+		1. given argument type parameter method is only 
+		2.available super class given argument type parameter method is in found in subclass also in super class
+		3. given argument type parameter method is in found in super class, widening parameter method found in subclass
+
+	2. Assume we called a overload method using superclass type referenced variable, then Identify from which class this method is executed, also identify will you get any CE in the below cases
+		1. Given argument type parameter method is available in superclass 2. Given argument widening type parameter method is available in superclass, given argument type parameter method available in subclass
+		3. Given argument narrow type parameter method is available in superclass, given argument type parameter method available in subclass
+		4. Given argument widening type parameter method is overridden in subclass
+		5. Given argument widening type parameter method is overridden in subclass, in subclass also we have given argument type parameter method
+
+Ex:
+
+Assume in parent class we have m1(long) method & in child class we have m1(int) method, then which method is executed for below method calls
+1. child.m1(50)
+2. child.m1('a')
+3. child.m1(50L)
+4. parent.m1(50)
+5. parent.m1('a')
+6. parent.m1(50L)
+
+Assume in parent class we have m1(int) method & in child class we have m1(long) method, then which method is executed for below method calls
+
+1. child.m1(50)
+2. child.m1('a')
+3. child.m1(50L)
+4. parent.m1(50) 
+5. parent.m1('a')
+6. parent.m1(50L)
+
+13. List out all differences between
+	i. Method overriding & method hiding 
+	ii. Method overriding & method overloading
+
+14. Who will resolve hidden idden method execution, will it compiler or JVM?
+
+15. Who will resolve overridden method execution, will it compiler or JVM?
+
+16. Who will resolve overloaded method execution, will it compiler or JVM?
+
+17. Why compiler resolves hidden & overloaded methods?
+
+18. Why JVM resolves overridden method execution?
+
+19. Identify valid overriding and overloading methods from the below methods list
+
+class Example{
+	void m1(int a, int b){}
+	void m2(){}
+	private void m3(String a){}
+	protected vold m4(double d, float f){}
+	public void m5(){}
+	public void m6(int x, float f()
+	static int m7(){return 10;}
+	void m8(){}
+}
+class Sample extends Example {
+	void m1(int a, int b){}
+	public void m2(){}
+	public int m3(Strings){return 10;}
+	public float m4(double d, float f) (return 20.34f;)
+	void m5(){}
+	public static void m6(float f, int x)
+	Int m7()(return 30;)
+	static void m8(X)
+}
+
+---------------------------------------
+Polymorphism Interview Questions
+---------------------------------------
+
+1. What is a polymorphism?
+
+2. How can we develop polymorphism In Java?
+
+3. What is the difference in Implementing polymorphism
+	1)using method overloading & 
+	2)using method overriding
+
+4. In what stage of project development we implement polymorphism? 
+
+5. How many types of polymorphisms Java supports? 
+
+6. What is compile-time polymorphism (or) static polymorphism (or) early binding?
+
+7. What is run-time polymorphism (or) dynamic polymorphism (or) late binding?
+
+8. How can we find a method call comes under compile time (or) runtime polymorphism? 
+
+9. Why static method and overloaded method comes under compile- time polymorphism?
+
+10. Why non-private, non-static method comes under run-time polymorphism? 
+
+11. If a method is overridden in subclass will it always comes under run-
+
+time polymorphism?
+
+12. What are the conditions should meet to achieve runtime polymorphism?
+
+13. What is the meaning of dynamic method dispatching? 
+
+14. Why interface guarantees runtime polymorphism? 
+
+15. Why every business object design should starts with interface?
+
+
+===========================================================================================
+1. What is a method overloading? 2
+
+. When a method is considered as overloading method? 3. When we should overload a method, what are the advantages?
+
+4. In overloading, why we should create methods with same name, if we
+
+create them with different names what will be the problem, will it be
+
+there any CE or RE?
+
+5. What are the rules we must follow in overloading method? 1. Is it possible to overload a method with the same parameter?
+
+2. Is it possible to overload a method by just changing return type of the method?
+
+3. Is it possible to overload a method with different return type & modifiers?
+
+4. Is it possible to overload a static method as non-static method?
+
+5. Is it possible to overload a non-static method as static method?
+
+6. Is it possible to overload a private method?
+
+7. is it possible to overload a final method? 8. Is it possible to overload a method in the same class?
+
+9. Is it possible to overload a method in subclass?
+
+10. Is it possible to override a overloaded method?
+
+6. In how many ways we can show differences in parameter in overloading method?
+
+7. On what basis overloaded method execution is resolved? 8. Identify what is the output in the below cases?
+
+Assume we have overloaded a m1() method with char & int parameters, then
+
+a. for m1('a') call which parameter method is executed? b. for m1(97) call which parameter method is executed?
+
+c. for m1('a'+'b') call which parameter method is
+
+
+=======================================================================================================
+
 1.What is polymorphism in Java?
+
 2.Explain the two types of polymorphism in Java.
+
 3.Can you override a static method in Java?
+
 4.Explain the concept of "upcasting" in Java.
+
 5.Explain the difference between compile-time polymorphism and runtime polymorphism in Java.
-6.What is the significance of the @Override annotation in Java, especially in the context of
-polymorphism?
-7.Discuss the importance of the "IS-A" relationship in the context of polymorphism. How does it
-relate to inheritance?
+
+6.What is the significance of the @Override annotation in Java, especially in the context of polymorphism?
+
+7.Discuss the importance of the "IS-A" relationship in the context of polymorphism. How does it relate to inheritance?
+
 8.How does polymorphism enhance code flexibility and maintainability in Java programs?
-9.Discuss the concept of functional interfaces and how they contribute to achieving polymorphism
-in Java through the introduction of lambda expressions.
-10.How does the introduction of default methods in interfaces impact polymorphism in Java?
-Provide an example.
+
+9.Discuss the concept of functional interfaces and how they contribute to achieving polymorphism in Java through the introduction of lambda expressions.
+
+10.How does the introduction of default methods in interfaces impact polymorphism in Java? Provide an example.
+
 11.Explain the limitations and challenges associated with achieving polymorphism in a
 multithreaded environment in Java.
-12.Explain the concept of "adapters" and how they can be used to achieve polymorphism in Java.
-Provide an example where adapters enhance code flexibility.
+
+12.Explain the concept of "adapters" and how they can be used to achieve polymorphism in Java. Provide an example where adapters enhance code flexibility.
+
 13.What is encapsulation in Java?
+
 14.Explain the benefits of encapsulation in Java.
+
 15.Why is it important to make variables private in a class?
+
 16.What are getter and setter methods, and how do they relate to encapsulation?
+
 17.Explain the concept of data hiding in encapsulation.
+
 18.Can encapsulation be achieved without using private access modifiers?
+
 19.Explain the concept of an immutable class. How does it relate to encapsulation?
+
 20.Discuss the challenges and potential issues associated with overusing encapsulation.
+
 21.How does encapsulation relate to the principle of information hiding?
+
 22.Explain the difference between encapsulation and abstraction.
+
 23.How does encapsulation contribute to the principle of "loose coupling" in software design?
+
 24.Explain the difference between encapsulation and encapsulation in Java.
+
 25.How does encapsulation contribute to the concept of "state encapsulation" in Java classes?
+
 26.Discuss the differences between encapsulation and data hiding.
-27.Why is it recommended to use getter and setter methods instead of making variables public in a
-class?
-28.Explain the concept of "package-private" access in Java and how it relates to data hiding within
-a package.
+
+27.Why is it recommended to use getter and setter methods instead of making variables public in a class?
+
+28.Explain the concept of "package-private" access in Java and how it relates to data hiding within a package.
+
 29.What are different ways to achieve or implement polymorphism in Java?
+
 30.What are the differences between Polymorphism and Inheritance in Java?
+
 31.How Java compiler differentiate between methods in Compile time Polymorphism?
+
 32.How to achieve/implement dynamic polymorphism in Java?
+
 33.What is Binding in Java?
+
 34. What is Static binding in Java?
+
 35.How Java compiler performs static binding?
+
 36.What is the dynamic binding?
+
 37.What is the difference between late and early binding?
+
 38.How JVM performs dynamic binding in Java?
+
 39.Is it possible to achieve polymorphism using data members in Java?
+
 40.What is constructor overloading?
+
 41.What happens if two methods have different return types but share the same name and signature?
+
 42.How does the Java Virtual Machine (JVM) handle encapsulation at runtime?
-43.Explain the concept of "heap memory" and how encapsulation influences the allocation and
-deallocation of objects in the heap.
+
+43.Explain the concept of "heap memory" and how encapsulation influences the allocation and deallocation of objects in the heap.
+
 44.Can you give some examples of when runtime polymorphism may not work as expected?
-45.Explain the memory implications of method overriding and dynamic method dispatch in
-polymorphic scenarios.
+
+45.Explain the memory implications of method overriding and dynamic method dispatch in polymorphic scenarios.
 ===================================================
 Q4. What is Polymorphism in Java ?
 Ans. Polymorphism means the condition of occurring in several di􀃡erent forms.

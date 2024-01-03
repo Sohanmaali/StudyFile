@@ -1,3 +1,113 @@
+-------------------------------------
+Constructor Interview Questions
+-------------------------------------
+
+1. What is a constructor?
+
+2. What is the use of constructor?
+
+3. What are the rules in creating a constructor?
+
+4. What is the rule in invoking a constructor? 
+
+5. Why constructor should be called with new keyword?
+
+6. What are the other ways of calling constructor?
+
+7. If we call constructor using this() or using super() will new object created?
+
+8. Why constructor name should be same as its class name?
+
+9. Why return type is not allowed for constructor? 
+
+10. If we place return type in constructor declaration, is it leads to CE?
+
+11. Can we define a method with class name, if yes, is it recommended, if no why?
+
+12. How compiler and JVM can differentiate method and constructor blocks, if a method is also created with class name?
+
+13. Why "return <value>;" is not allowed constructor?
+
+14. Why "return;" is allowed in constructor?
+
+15. Why 8 execution level modifiers are not allowed to constructor? 
+
+16. How many types of constructors will java supports?
+
+17. What is a copy constructor; will Java supports its creation?
+
+18. What is the alternative giveri în Java for copy constructor functionality?
+
+19. What is a static constructor; will Java supports its creation?
+
+20. Why is a default constructor? 
+
+21. What are the differences between default and no-arg constructor?
+
+22. When will compiler provide constructor in a class?
+
+23. Can we have both default & no-arg constructor in class?
+
+24. Can we have both default & parameterized constructor in class?
+
+25. Can we have both no-arg & parameterized constructor in class?
+
+26. What is the constructor overloading?
+
+27. If we invoke one constructor, will all other constructors are executed?
+
+28. How can we execute overloaded constructors of a class without creating new object?
+
+29. What is the difference between this() & this(5)?
+
+30. How non-static variables will be differentiated from one object to another object in a constructor in its initialization logic? 
+
+31. How can we initialize non-static variables in different instances with different values at the time of object creation & after object creation?
+
+32. Explain about setXXX() & getXXX() methods?
+
+33. Explain about mutator & accessor methods?
+
+34. Are setXXX, mutator method & getXXX & accessor methods same?
+
+---------------------------------------------------------
+Constructor overloading & chaining Interview Questions
+---------------------------------------------------------
+
+1. What is constructor overloading? 
+
+2. What is constructor chaining?
+
+3. Can we override constructor? 
+
+4. If we overload constructors, which constructor is executed?
+
+5. When should we overload constructor? 
+
+6. What are the rules we must follow in overloading a constructor?
+
+7. How can we chain subclass constructors with super constructors
+
+8. How can we chain subclass overloaded constructors? 
+
+9. When we invoke a constructor using this() or using super(), will new object created?
+
+10. Explain this() execution flow Text
+
+11. Write a program to count number of objects created from a class?
+
+12. What are the rules we must follow in constructor chaining? 
+	1) Why this() or super() call should be placed as first statement in a constructor?
+	2) Can we place both this() & super() in the a constructor? a constructor?
+	3) Can we place this() or super() twice in
+	4) Can we place this() or super() in a method?
+	5) Can we place this() call in the same matching parameter constructor?
+	6) When will you get CE: recursive constructor call? 
+	7) For example in a no-arg constructor, why we cannot place this() call but we can place constructor call with new keyword?
+	8) In a subclass, why we should not place this() in all constructors, at least one constructor should contain super()?
+
+
+=============================================================================
 19)What is constructor in java ?
 constructor is a special method used to initialize objects in java
 we use constructors to initialize all variables in the class when an object is created. As and when an object

@@ -298,7 +298,7 @@ Variable hiding interview questions
 14. At execution time, if we modify super class non-static variable value in one subclass, is it affected to all other subclasses?
 
 ------------------------------------------------
-Metic hiding & overriding interview questions
+Method hiding & overriding interview questions
 ------------------------------------------------
 
 1. What is the meaning of method hiding?
@@ -367,6 +367,7 @@ Metic hiding & overriding interview questions
 
 24. Assume we have main method in both superclass & subclass, in this case how can we execute main method from both classes?
 
+=============================================================================
 13. What are the main principles of Object Oriented Programming?
 14. What is the difference between Object Oriented Programming
 language and Object Based Programming language?

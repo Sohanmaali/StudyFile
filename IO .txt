@@ -112,3 +112,32 @@ File Handling
 59. What is rule in calling writeXXX() & readXXX() methods?
 
 60. When will get EOFException?
+
+-----------------------------------
+File Class Interview Questions
+-----------------------------------
+
+1. What is the use of File class?
+
+2. What are the various methods available in file class?
+
+3. How can we create new files and directories from Java program? 
+
+4. What is the difference between file.mkdir() & file.mkdirs() methods?
+
+5. What is the use of file.exists() method?
+
+6. How can we find the given file is a normal file or directory? 
+
+7. How can we find absolute path of a given file?
+
+8. How can we list all files and subdirectories of a given folder?
+
+9. While listing the files how can we filter them?
+
+10. How can we delete files and directories?
+
+11. What is the rule in deleting a directory?
+
+12. How can we retrieve OS dependent directory separator?
+======================================================================================
