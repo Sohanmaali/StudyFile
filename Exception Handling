@@ -390,3 +390,197 @@ Explain various casus exist in try/catch/finally execution control?
 54. What is the difference between exception & System.exit(); 
 
 55. What is the difference between try-catch & if-else?
+
+
+Q27. What are the types of exceptions?
+Ans.There are two types of exceptions: checked and unchecked exceptions.
+Checked exceptions: These exceptions must be handled by programmer otherwise the program would throw a compilation error.
+Unchecked exceptions: It is up to the programmer to write the code in such a way to avoid
+
+Q28. What is throw keyword in exception handling?
+Ans.The throw keyword is used for throwing user de􀃕ned or pre-de􀃕ned exception.
+
+Q29. What is throws keyword?
+Ans.If a method does not handle a checked exception, the method must declare it using the throws keyword. The throws keyword appears at the end
+of a method’s signature.
+
+
+Q30. Can we have a try block without catch or 􀃕nally block?
+Ans.No, we cannot have a try block without catch or 􀃕nally block. We must have either one of them or both.
+Q31. Can we have multiple catch blocks following a single try block?
+Ans.Yes we can have multiple catch blocks in order to handle more than one exception.
+Q32. Is it possible to have 􀃕nally block without catch block?
+Ans.Yes, we can have try block followed by 􀃕nally block without even using catch blocks in between.
+Q33. Can we handle more than one exception in a single catch block?
+Ans.Yes we can do that using if-else statement but it is not considered as a good practice. We should have one catch block for one exception.
+Q34. When a 􀃕nally block does not get executed?
+Ans.The only time 􀃕nally won’t be called is if you call System.exit() or if the JVM crashes.
+
+Q44. Can we modify the throws clause of the super class method while overriding it in the subclass?
+Ans. Yes, we can modify the throws clause of the super class method while overriding it in the subclass. However, there are some rules which are to
+be followed while overriding in case of exception handling.
+If the super class method does not declare an exception, subclass overridden method cannot declare the checked exception, but it can declare
+the unchecked exception.
+If the super class method declares an exception, subclass overridden method can declare same, subclass exception or no exception but cannot
+declare parent exception
+
+Q45. What are the states in the lifecycle of a Thread?
+Ans. A thread can have one of the following states during its lifetime:
+New: In this state, a Thread class object is created using a new operator, but the thread is not alive. Thread doesn’t start until we call the start()
+method.
+Runnable: In this state, the thread is ready to run after calling the start() method. However, the thread is not yet selected by the thread
+scheduler.
+Running: In this state, the thread scheduler picks the thread from the ready state, and the thread is running.
+Waiting/Blocked: In this state, a thread is not running but still alive, or it is waiting for the other thread to 􀃕nish.
+Dead/Terminated: A thread is in terminated or dead state when the run() method exits.
+
+Q57. Which types of exceptions are caught at compile time?
+Ans: Checked exceptions can be caught at the
+
+Q69. Can a dead thread be started again?
+Ans: In java, a thread which is in dead state can’t be started again. There is no way to restart a dead thread
+
+Q88. What happens if an exception is not handled in a program?
+Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which
+caused exception throwing.
+
+Q99. What’s the base class of all exception classes?
+Ans: In Java, Java.lang.Throwable is the super class of all exception classes and all exception classes are derived from this base class.
+
+6 Exception Handling 14
+6.1 What are the two types of Exceptions in Java ? Which are the differences between them ? . . . . . . . . . . . . . 14
+6.2 What is the difference between Exception and Error in java ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.3 What is the difference between throw and throws ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.4 What is the importance of finally block in exception handling ? . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.5 What will happen to the Exception object after exception handling ? . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.6 How does finally block differ from finalize() method ?
+
+
+
+Exception Interview Questions
+1) What is an Exception?
+An exception is an abnormal condition that arises in a code sequence at run time. In other
+words, an exception is a run-time error.
+2) What is a Java Exception?
+A Java exception is an object that describes an exceptional condition i.e., an error condition
+that has occurred in a piece of code. When this type of condition arises, an object
+representing that exception is created and thrown in the method that caused the error by
+the Java Runtime. That method may choose to handle the exception itself, or pass it on.
+Either way, at some point, the exception is caught and processed.
+3) What are the different ways to generate and Exception?
+There are two different ways to generate an Exception.
+1. Exceptions can be generated by the Java run-time system.
+Exceptions thrown by Java relate to fundamental errors that violate the rules of the
+Java language or the constraints of the Java execution environment.
+2. Exceptions can be manually generated by your code.
+Manually generated exceptions are typically used to report some error condition to
+the caller of a method.
+4) Where does Exception stand in the Java tree hierarchy?
+• java.lang.Object
+• java.lang.Throwable
+• java.lang.Exception
+• java.lang.Error
+5) Is it compulsory to use the finally block?
+It is always a good practice to use the finally block. The reason for using the finally block is,
+any unreleased resources can be released and the memory can be freed. For example while
+closing a connection object an exception has occurred. In finally block we can close that
+object. Coming to the question, you can omit the finally block when there is a catch block
+associated with that try block. A try block should have at least a catch or a finally block.
+6) How are try, catch and finally block organized?
+A try block should associate with at least a catch or a finally block. The sequence of try,
+catch and finally matters a lot. If you modify the order of these then the code won’t
+compile. Adding to this there can be multiple catch blocks associated with a try block. The
+final concept is there should be a single try, multiple catch blocks and a single finally block
+in a try-catch-finally block.
+7) What is a throw in an Exception block?
+“throw” is used to manually throw an exception (object) of type Throwable class or a
+subclass of Throwable. Simple types, such as int or char, as well as non-Throwable
+classes, such as String and Object, cannot be used as exceptions. The flow of execution
+stops immediately after the throw statement; any subsequent statements are not
+executed.
+throw ThrowableInstance;
+ThrowableInstance must be an object of type Throwable or a subclass of Throwable.
+throw new NullPointerException("thrownException");
+8) What is the use of throws keyword?
+If a method is capable of causing an exception that it does not handle, it must specify this
+behavior so that callers of the method can guard themselves against that exception. You do
+this by including a throws clause in the method’s declaration. A throws clause lists the
+types of exceptions that a method might throw.
+type method-name(parameter-list) throws exception-list
+{
+// body of method
+}
+Warning: main(http://www.javabeat.net/javabeat/templates/faqs/faqs_middle.html):
+failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found in
+/home/content/k/k/s/kkskrishna/html/faqs/exception/exception-faqs-1.html on line 195
+Warning: main(http://www.javabeat.net/javabeat/templates/faqs/faqs_middle.html):
+failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found in
+/home/content/k/k/s/kkskrishna/html/faqs/exception/exception-faqs-1.html on line 195
+Warning: main(): Failed opening 'http://www.javabeat.net/javabeat/templates/faqs/faqs_(include_path='.:/usr/local/lib/php') in /home/content/k/k/s/kkskrishna/html/faqs/on line 195
+Here, exception-list is a comma-separated list of the exceptions that a method can static void throwOne() throws IllegalAccessException {
+System.out.println("Inside throwOne.");
+9) What are Checked Exceptions and Unchecked
+Exceptions?
+The types of exceptions that need not be included in a methods throws list are called
+Unchecked Exceptions.
+• ArithmeticException
+• ArrayIndexOutOfBoundsException
+• ClassCastException
+• IndexOutOfBoundsException
+• IllegalStateException
+• NullPointerException
+• SecurityException
+The types of exceptions that must be included in a methods throws list if that method can
+generate one of these exceptions and does not handle it itself are called Checked
+Exceptions.
+• ClassNotFoundException
+• CloneNotSupportedException
+• IllegalAccessException
+• InstantiationException
+• InterruptedException
+• NoSuchFieldException
+• NoSuchMethodException
+10) What are Chained Exceptions?
+The chained exception feature allows you to associate another exception with an exception.
+This second exception describes the cause of the first exception. Lets take a simple
+example. You are trying to read a number from the disk and using it to divide a number.
+Think the method throws an ArithmeticException because of an attempt to divide by zero
+(number we got). However, the problem was that an I/O error occurred, which caused the
+divisor to be set improperly (set to zero). Although the method must certainly throw an
+ArithmeticException, since that is the error that occurred, you might also want to let the
+calling code know that the underlying cause was an I/O error. This is the place where
+chained exceptions come in to picture.
+Throwable getCause( )
+Throwable initCause(Throwable causeExc)
+
+52) What is an exception in java? .............................................................................................. 18
+53) State some situations where exceptions may arise in java? ................................... 18
+54) What is Exception handling in java? ......................................................................... 18
+55) What is an eror in Java? ................................................................................................ 18
+56) What are advantages of Exception handling in java? ................................................. 18
+57) In how many ways we can do exception handling in java? ..................................... 18
+58) List out five keywords related to Exception handling ? .............................................. 18
+3
+59) Explain try and catch keywords in java? ................................................................. 19
+60) Can we have try block without catch block? .......................................................... 19
+61) Can we have multiple catch block for a try block? ...................................................... 19
+62) Explain importance of finally block in java? ................................................................... 19
+63) Can we have any code between try and catch blocks? .................................................. 19
+64) Can we have any code between try and finally blocks? .................................... 19
+65) Can we catch more than one exception in single catch block? .................................. 19
+66) What are checked Exceptions? ............................................................................................ 20
+67) What are unchecked exceptions in java? ........................................................................ 20
+68) Explain differences between checked and Unchecked exceptions in java? ........ 20
+69) What is default Exception handling in java? .......................................................... 20
+70) Explain throw keyword in java? .................................................................................. 21
+71) Can we write any code after throw statement? ............................................................ 21
+72) Explain importance of throws keyword in java? ........................................................... 21
+73) Explain the importance of finally over return statement? ........................................ 21
+74) Explain a situation where finally block will not be executed? ......................... 21
+75) Can we use catch statement for checked exceptions? ...................................... 21
+76) What are user defined exceptions? .................................................................................... 21
+77) Can we rethrow the same exception from catch handler? ...................................... 21
+78) Can we nested try statements in java? ................................................................................ 22
+79) Explain the importance of throwable class and its methods? ......................... 22
+80) Explain when ClassNotFoundException will be raised ? .............................................. 22
+81) Explain when NoClassDefFoundError will be raised ? .................................................. 2

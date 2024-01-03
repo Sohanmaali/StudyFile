@@ -1,0 +1,110 @@
+Q10. When to use LinkedList or ArrayList?
+Ans. Accessing elements are faster with ArrayList, because it is index based. But accessing is di􀃞cult with LinkedList. It is slow access. This is to access
+any element, you need to navigate through the elements one by one. But insertion and deletion is much faster with LinkedList, because if you know
+the node, just change the pointers before or after nodes. Insertion and deletion is slow with ArrayList, this is because, during these operations
+ArrayList need to adjust the indexes according to deletion or insertion if you are performing on middle indexes. Means, an ArrayList having 10
+elements, if you are inserting at index 5, then you need to shift the indexes above 5 to one more.
+
+
+Q46. What is the di􀃡erence between List and Set?
+Ans. The List and Set both extend the collection interface. However, there are some di􀃡erences between the both which are listed below.
+The List can contain duplicate elements whereas Set includes unique items.
+The List is an ordered collection which maintains the insertion order whereas Set is an unordered collection which does not preserve the
+insertion order.
+The List interface contains a single legacy class which is Vector class whereas Set interface does not have any legacy class.
+The List interface can allow n number of null values whereas Set interface only allows a single null value.
+Q47. What is the di􀃡erence between Set and Map?
+Ans. The di􀃡erences between the Set and Map are given below.
+Set contains values only whereas Map contains key and values both.
+Set contains unique values whereas Map can contain unique Keys with duplicate values.
+Set holds a single number of null value whereas Map can include a single null key with n number of null values.
+Update Your Skills form Our Experts: Core Java Online Training
+Q48. What is the di􀃡erence between Collection and Collections?
+Ans. The di􀃡erences between the Collection and Collections are given below.
+The Collection is an interface whereas Collections is a class.
+The Collection interface provides the standard functionality of data structure to List, Set, and Queue. However, Collections class is to sort and
+synchronize the collection elements.
+The Collection interface provides the methods that can be used for data structure whereas Collections class provides the static methods which
+can be used for various operation on a collection.
+Q49. What is the advantage of the generic collection?
+There are three main advantages of using the generic collection.
+If we use the generic class, we don’t need typecasting.
+It is type-safe and checked at compile time.
+Generic con􀃕rms the stability of the code by making it bug detectable at compile time.
+Q50. How to remove duplicates from ArrayList?
+There are two ways to remove duplicates from the ArrayList.
+Using HashSet:By using HashSet we can remove the duplicate element from the ArrayList, but it will not then preserve the insertion order.
+Using LinkedHashSet:We can also maintain the insertion order by using LinkedHashSet instead of HashSet.
+The Process to remove duplicate elements from ArrayList using the LinkedHashSet:
+Copy all the elements of ArrayList to LinkedHashSet.
+Empty the ArrayList using clear() method, which will remove all the elements from the list.
+Now copy all the elements of LinkedHashset to ArrayList.
+
+Q34. What’s the di􀃡erence between an array and Vector?
+Ans: An array groups data of same primitive type and is static in nature while vectors are dynamic in nature and can hold data of di􀃡erent data types.
+
+Q54. What’s di􀃡erence between Stack and Queue?
+Ans: Stack and Queue both are used as placeholder for a collection of data. The primary di􀃡erence between a stack and a queue is that stack is based
+on Last in First out (LIFO) principle while a queue is based on FIFO (First In First Out) principle.
+
+Q96. Which API is provided by Java for operations on set of objects?
+Ans: Java provides a Collection API which provides many useful methods which can be applied on a set of objects. Some of the important classes
+provided by Collection API include ArrayList, HashMap, TreeSet and TreeMap.
+4 Java Collections 8
+4.1 What are the basic interfaces of Java Collections Framework ? . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4.2 Why Collection doesn’t extend Cloneable and Serializable interfaces ? . . . . . . . . . . . . . . . . . . . . . . . 8
+4.3 What is an Iterator ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4.4 What differences exist between Iterator and ListIterator ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4.5 What is difference between fail-fast and fail-safe ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.6 How HashMap works in Java ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.7 What is the importance of hashCode() and equals() methods ? . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.8 What differences exist between HashMap and Hashtable ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.9 What is difference between Array and ArrayList ? When will you use Array over ArrayList ? . . . . . . . . . . . 9
+4.10 What is difference between ArrayList and LinkedList ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+4.11 What is Comparable and Comparator interface ? List their differences. . . . . . . . . . . . . . . . . . . . . . . . 10
+4.12 What is Java Priority Queue ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+4.13 What do you know about the big-O notation and can you give some examples with respect to different data
+structures ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+4.14 What is the tradeoff between using an unordered array versus an ordered array ? . . . . . . . . . . . . . . . . . . 10
+4.15 What are some of the best practices relating to the Java Collection framework ? . . . . . . . . . . . . . . . . . . 11
+4.16 What’s the difference between Enumeration and Iterator interfaces ? . . . . . . . . . . . . . . . . . . . . . . . . 11
+4.17 What is the difference between HashSet and TreeSet ?
+
+
+
+198) What is collections framework ? ........................................................................................... 36
+199) What is collection ? .................................................................................................................... 37
+200) Difference between collection, Collection and Collections in java? ......................... 37
+201) Explain about Collection interface in java ? .................................................................... 37
+202) List the interfaces which extends collection interface ? ............................................. 37
+203) Explain List interface ? ............................................................................................................. 37
+204) Explain methods specific to List interface ? ..................................................................... 38
+205) List implementations of List Interface ? ............................................................................ 38
+206) Explain about ArrayList ? ....................................................................................................... 38
+8
+207) Difference between Array and ArrayList ? ........................................................................ 38
+208) What is vector? .......................................................................................................................... 39
+209) Difference between arraylist and vector ? ........................................................................ 39
+210) Define Linked List and its features with signature ? .................................................. 39
+211) Define Iterator and methods in Iterator? ........................................................................ 40
+212) In which order the Iterator iterates over collection? .................................................... 40
+212) Explain ListIterator and methods in ListIterator? ......................................................... 40
+213) Explain about Sets ? ................................................................................................................. 41
+214) Implementations of Set interface ? ..................................................................................... 41
+215) Explain HashSet and its features ? .................................................................................... 41
+216) Explain Tree Set and its features? ....................................................................................... 41
+217) When do we use HashSet over TreeSet? .......................................................................... 42
+218) What is Linked HashSet and its features? ........................................................................ 42
+219) Explain about Map interface in java? .................................................................................. 42
+220) What is linked hashmap and its features? ........................................................................ 42
+221) What is SortedMap interface? .............................................................................................. 42
+222) What is Hashtable and explain features of Hashtable? .............................................. 42
+223) Difference between HashMap and Hashtable? ................................................................ 42
+224) Difference between arraylist and linkedlist? .................................................................... 43
+225) Difference between Comparator and Comparable in java? ...................................... 43
+226) What is concurrent hashmap and its features ? ............................................................. 43
+227) Difference between Concurrent HashMap and Hashtable and
+collections.synchronizedHashMap? ................................................................................................ 43
+228) Explain copyOnWriteArrayList and when do we use copyOnWriteArrayList? ...... 43
+229) Explain about fail fast iterators in java? ............................................................................ 44
+230) Explain about fail safe iterators in java?

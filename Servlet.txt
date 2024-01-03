@@ -1,0 +1,17 @@
+11 Servlets 25
+11.1 What is a Servlet ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+11.2 Explain the architechure of a Servlet. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+11.3 What is the difference between an Applet and a Servlet ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+11.4 What is the difference between GenericServlet and HttpServlet ? . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+11.5 Explain the life cycle of a Servlet. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+11.6 What is the difference between doGet() and doPost() ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+11.7 What is meant by a Web Application ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+11.8 What is a Server Side Include (SSI) ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+11.9 What is Servlet Chaining ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+11.10How do you find out what client machine is making a request to your servlet ? . . . . . . . . . . . . . . . . . . . 26
+11.11What is the structure of the HTTP response ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+11.12What is a cookie ? What is the difference between session and cookie ? . . . . . . . . . . . . . . . . . . . . . . 27
+11.13Which protocol will be used by browser and servlet to communicate ? . . . . . . . . . . . . . . . . . . . . . . . 27
+11.14What is HTTP Tunneling ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+11.15What’s the difference between sendRedirect and forward methods ? . . . . . . . . . . . . . . . . . . . . . . . . 27
+11.16What is URL Encoding and URL Decoding ?

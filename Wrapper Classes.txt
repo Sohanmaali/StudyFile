@@ -105,3 +105,6 @@ Auto Boxing And Unboxing Interview Questions
 
 15. What happens if there is no matching wrapper class when converting from a primitive to a wrapper class?
 
+Q56. How can we use primitive data types as objects?
+Ans: Primitive data types like int can be handled as objects by the use of their respective wrapper classes. For example, Integer is a wrapper class for
+primitive data type int. We can apply di􀃡erent methods to a wrapper class, just like any other object.

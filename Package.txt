@@ -1,0 +1,31 @@
+Q16. What are Java Packages? What’s the signi􀃕cance of packages?
+Ans: In Java, package is a collection of classes and interfaces which are bundled together as they are related to each other. Use of packages helps
+developers to modularize the code and group the code for proper re-use. Once code has been packaged in Packages, it can be imported in other
+classes and used.
+
+
+Q20. Does Importing a package imports its sub-packages as well in Java?
+Ans: In java, when a package is imported, its sub-packages aren’t imported and developer needs to import them separately if required.
+For example, if a developer imports a package university.*, all classes in the package named university are loaded but no classes from the subpackage
+are loaded. To load the classes from its sub-package ( say department), developer has to import it explicitly as follows:
+import university.department.*
+
+39 ) What are packages in java?
+Package is a mechanism to group related classes ,interfaces and enums in to a single module.
+Package can be declared using the following statement :
+Syntax : package <package-name>
+Coding Convention : package name should be declared in small letters.
+package statement defines the namespace.
+The main use of package is
+1) To resolve naming conflicts
+2) For visibility control : We can define classes and interfaces that are not accessible outside the
+class.
+40) Can we have more than one package statement in source file ?
+We can’t have more than one package statement in source file. In any java program there can be atmost
+only 1 package statement. We will get compilation error if we have more than one package statement in
+source file.
+41) Can we define package statement after import statement in java?
+We can’t define package statement after import statement in java. package statement must be the first
+statement in source file. We can have comments before the package statement.
+
+

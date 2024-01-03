@@ -230,3 +230,21 @@ System.identityHashCode() methods?
 8, 9, 10, 11 check Multithreading interview questions
 
 Why wait(), notify(), and notifyAll() methods are given in Object class why not in Thread class?
+==================================================================
+Q72. What’s the di􀃡erence between comparison done by equals method and == operator?
+Ans: In Java, equals() method is used to compare the contents of two string objects and returns true if the two have same value while == operator
+compares the references of two string objects.
+In the following example, equals() returns true as the two string objects have same values. However == operator returns false as both string objects
+are referencing to di􀃡erent objects:
+
+2 General Questions about Java 3
+2.1 What is JVM ? Why is Java called the Platform Independent Programming Language? . . . . . . . . . . . . . . 3
+2.2 What is the Difference between JDK and JRE ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2.3 What does the “static” keyword mean ? Can you override private or static method in Java ? . . . . . . . . . . . . 3
+2.4 Can you access non static variable in static context ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2.5 What are the Data Types supported by Java ? What is Autoboxing and Unboxing ? . . . . . . . . . . . . . . . . 4
+2.6 What is Function Overriding and Overloading in Java ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.7 What is a Constructor, Constructor Overloading in Java and Copy-Constructor . . . . . . . . . . . . . . . . . . . 4
+2.8 Does Java support multiple inheritance ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.9 What is the difference between an Interface and an Abstract class ? . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.10 What are pass by reference and pass by value ?

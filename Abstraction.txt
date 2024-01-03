@@ -6,7 +6,9 @@ Abstraction interview questions
 
 2. What is the meaning of hiding implementation details?
 
-3. Is abstraction an OOP principle? 4. In which stage of project lifecycle abstraction is used?
+3. Is abstraction an OOP principle? 
+
+4. In which stage of project lifecycle abstraction is used?
 
 5. How many types of classes we will develop as per abstraction in object design? 
 
@@ -24,7 +26,7 @@ Abstract Keyword Interview Question
 
 3. To what programming elements abstract keyword is allowed & not allowed? 
 
-4. Why abstract keyword is not allowed to variable, constructor, final class & enum?
+4. Why abstract keyword is not allowed to variable, constructor, final class and enum?
 
 5. What is the difference in declaring method as abstract & class as abstract?
 
@@ -125,3 +127,28 @@ Abstract Class Interview Questions
 24. How should we define a class not to allow subclass and not to allow instantiation?
 
 25. In an abstract class can we declare all its constructors as private?
+===========================================
+Q9. What is abstract class or abstract method?
+Ans.We cannot create instance for an abstract class. We can create instance for its subclass only. By specifying abstract keyword just before class, we
+can make a class as abstract class.
+public abstract class MyAbstractClass{
+}
+Abstract class may or may not contains abstract methods. Abstract method is just method signature, it does not containes any implementation. Its
+subclass must provide implementation for abstract methods. Abstract methods are looks like as given below:
+public abstract int getLength();
+
+Q17. Can we declare a class as Abstract without having any abstract method?
+Ans: Yes we can create an abstract class by using abstract keyword before class name even if it doesn’t have any abstract method. However, if a class
+has even one abstract method, it must be declared as abstract otherwise it will give an error.
+Q18. What’s the di􀃡erence between an Abstract Class and Interface in Java?
+Ans: The primary di􀃡erence between an abstract class and interface is that an interface can only possess declaration of public static methods with no
+concrete implementation while an abstract class can have members with any access speci􀃕ers (public, private etc) with or without concrete
+implementation.
+Another key di􀃡erence in the use of abstract classes and interfaces is that a class which implements an interface must implement all the methods of
+the interface while a class which inherits from an abstract class doesn’t require implementation of all the methods of its super class.
+A class can implement multiple interfaces but it can extend only one abstract class.
+Q19. What are the performance implications of Interfaces over abstract classes?
+Ans: Interfaces are slower in performance as compared to abstract classes as extra indirections are required for interfaces. Another key factor for
+developers to take into consideration is that any class can extend only one abstract class while a class can implement many interfaces.
+Use of interfaces also puts an extra burden on the developers as any time an interface is implemented in a class; developer is forced to implement
+each and every method of interface.

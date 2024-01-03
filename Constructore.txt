@@ -1,0 +1,11 @@
+19)What is constructor in java ?
+constructor is a special method used to initialize objects in java
+we use constructors to initialize all variables in the class when an object is created. As and when an object
+is created it is initialized automatically with the help of constructor in java.
+We have two types of constructors
+Default Constructor
+Parameterized Constructor
+
+50) Can we create constructor in abstract class ?
+We can create constructor in abstract class , it does’nt give any compilation error. But when we cannot
+instantiate class there is no use in creating a constructor for abstract class.

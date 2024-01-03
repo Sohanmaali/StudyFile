@@ -314,3 +314,131 @@ Non-Daemon?
 50. How can we add our threads to our custom thread group?
 
 51. What is the use of ThreadLocal class?
+
+
+
+Q35. What is Multithreading?
+Ans.Executing several tasks at a time, where each task is a separate independent part of a same process. Each separate independent part of a
+program is called as a Thread. In short the process of executing multiple threads simultaneously is known as multithreading.
+Q36. How can we create a thread in java and which is the recommended way?
+Ans.There are following two ways of creating a thread:
+1) By Implementing Runnable interface.
+2) By Extending Thread class.
+Implementing Runnable interface is the recommended way to create a Thread.
+Update Your Skills form Our Experts: Core Java Online Training
+Q37. What is di􀃡erence between wait and sleep methods in java?
+Ans.sleep():It is a static method on Thread class. It makes the current thread into the “Not Runnable” state for speci􀃕ed amount of time. During this
+time, the thread keeps the lock (monitors) it has acquired.
+wait(): It is a method on Object class. It makes the current thread into the “Not Runnable”state. Wait is called on a object, not a thread. Before calling
+wait() method, the object should be synchronized, means the object should be inside synchronized block. The call to wait() releases the acquired lock.
+Q38. What is di􀃡erence between yield and sleep?
+Ans. yield() – It causes the currently executing thread object to temporarily pause and allow other threads to execute.
+sleep() – It causes the current thread to suspend execution for a speci􀃕ed period. When a thread goes into sleep state it doesn’t release the lock.
+
+Q35. What is multi-threading?
+Ans: Multi threading is a programming concept to run multiple tasks in a concurrent manner within a single program. Threads share same process
+stack and running in parallel. It helps in performance improvement of any program.
+Q36. Why Runnable Interface is used in Java?
+Ans: Runnable interface is used in java for implementing multi threaded applications. Java.Lang.Runnable interface is implemented by a class to
+support multi threading.
+Update Your Skills form Our Experts: Core Java Online Training
+Q37. What are the two ways of implementing multi-threading in Java?
+Ans: Multi threaded applications can be developed in Java by using any of the following two methodologies:
+1. By using Java.Lang.Runnable Interface. Classes implement this interface to enable multi threading. There is a Run() method in this interface
+which is implemented.
+2. By writing a class that extend Java.Lang.Thread class.
+
+
+Q44. In multi-threading how can we ensure that a resource isn’t used by multiple threads
+simultaneously?
+Ans: In multi-threading, access to the resources which are shared among multiple threads can be controlled by using the concept of synchronization.
+Using synchronized keyword, we can ensure that only one thread can use shared resource at a time and others can get control of the resource only
+once it has become free from the other one using it.
+
+Q58. Describe di􀃡erent states of a thread.
+Ans: A thread in Java can be in either of the following states:
+Ready: When a thread is created, it’s in Ready state.
+Running: A thread currently being executed is in running state.
+Waiting: A thread waiting for another thread to free certain resources is in waiting state.
+Dead: A thread which has gone dead after execution is in dead state.
+
+Q81. In Java thread programming, which method is a must implementation for all threads?
+Ans: Run() is a method of Runnable interface that must be implemented by all threads.
+
+Q82. I want to control database connections in my program and want that only one thread should be
+able to make database connection at a time. How can I implement this logic?
+Ans: This can be implemented by use of the concept of synchronization. Database related code can be placed in a method which hs synchronized
+keyword so that only one thread can access it at a time.
+
+3 Java Threads 6
+3.1 What is the difference between processes and threads ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+3.2 Explain different ways of creating a thread. Which one would you prefer and why ? . . . . . . . . . . . . . . . . 6
+3.3 Explain the available thread states in a high-level. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+3.4 What is the difference between a synchronized method and a synchronized block ? . . . . . . . . . . . . . . . . 7
+3.5 How does thread synchronization occurs inside a monitor ? What levels of synchronization can you apply ? . . . 7
+3.6 What’s a deadlock ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3.7 How do you ensure that N threads can access N resources without deadlock ? . . . .
+
+83) What is process ? ...................................................................................................................... 22
+84) What is thread in java? .......................................................................................................... 22
+85) Difference between process and thread? ........................................................................ 22
+86) What is multitasking ? ............................................................................................................ 22
+87) What are different types of multitasking? ....................................................................... 22
+88) What are the benefits of multithreaded programming? ........................................... 23
+89) Explain thread in java? ........................................................................................................... 23
+90) List Java API that supports threads? ................................................................................. 23
+4
+91) Explain about main thread in java? ....................................................................................... 23
+92) In how many ways we can create threads in java? ....................................................... 23
+93) Explain creating threads by implementing Runnable class? .................................... 23
+94) Explain creating threads by extending Thread class ? ............................................... 23
+95) Which is the best approach for creating thread ? ........................................................ 24
+96) Explain the importance of thread scheduler in java? ................................................... 24
+97) Explain the life cycle of thread? .......................................................................................... 24
+98) Can we restart a dead thread in java? ............................................................................. 24
+99) Can one thread block the other thread? .......................................................................... 24
+100) Can we restart a thread already started in java? ..................................................... 24
+101) What happens if we don’t override run method ? ........................................................ 24
+102) Can we overload run() method in java? ........................................................................ 24
+105) What is a lock or purpose of locks in java? .................................................................. 24
+106) In how many ways we can do synchronization in java? ......................................... 25
+107) What are synchronized methods ? .................................................................................. 25
+108) When do we use synchronized methods in java? ......................................................... 25
+109) When a thread is executing synchronized methods , then is it possible to
+execute other synchronized methods simultaneously by other threads? ...................... 25
+110) When a thread is executing a synchronized method , then is it possible for the
+same thread to access other synchronized methods of an object ? .................................. 25
+111) What are synchronized blocks in java? .............................................................................. 25
+112) When do we use synchronized blocks and advantages of using synchronized
+blocks? ...................................................................................................................................................... 25
+113) What is class level lock ? ......................................................................................................... 26
+114) Can we synchronize static methods in java? ................................................................. 26
+115) Can we use synchronized block for primitives? ............................................................. 26
+116) What are thread priorities and importance of thread priorities in java? ............. 26
+117) Explain different types of thread priorities ? ............................................................... 26
+118) How to change the priority of thread or how to set priority of thread? ............... 26
+119) If two threads have same priority which thread will be executed first ? ............. 26
+120) What all methods are used to prevent thread execution ? ..................................... 26
+121) Explain yield() method in thread class ? ........................................................................... 26
+122) Is it possible for yielded thread to get chance for its execution again ? ............. 27
+5
+123) Explain the importance of join() method in thread class? ..................................... 27
+124) Explain purpose of sleep() method in java? ................................................................... 27
+125) Assume a thread has lock on it, calling sleep() method on that thread will
+release the lock? ................................................................................................................................... 28
+126) Can sleep() method causes another thread to sleep? ............................................. 28
+127) Explain about interrupt() method of thread class ? .................................................. 28
+128) Explain about interthread communication and how it takes place in java? ....... 28
+129) Explain wait(), notify() and notifyAll() methods of object class ? ......................... 28
+130) Explain why wait() , notify() and notifyAll() methods are in Object class rather
+than in thread class? ........................................................................................................................... 28
+131) Explain IllegalMonitorStateException and when it will be thrown? ......................... 28
+132) when wait(), notify(), notifyAll() methods are called does it releases the lock
+or holds the acquired lock? ............................................................................................................... 28
+133) Explain which of the following methods releases the lock when yield(),
+join(),sleep(),wait(),notify(), notifyAll() methods are executed? ...................................... 28
+134) What are thread groups? ....................................................................................................... 29
+135) What are thread local variables ? ........................................................................................ 29
+136) What are daemon threads in java? ..................................................................................... 29
+137) How to make a non daemon thread as daemon? .......................................................... 29
+138) Can we make main() thread as daemon? ....................................................................... 2

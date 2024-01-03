@@ -1,0 +1,1097 @@
+1) What is Java?
+Java is a simple, high-level, secure, platform-independent, multithreaded, and object oriented programming language. It was developed by James
+Gosling in June 1991. It can also be known as the platform as it provides its own runtime environment as JRE and API.
+
+2) What is the di􀃡erence between JDK, JRE, and JVM?
+JVM
+JVM is an acronym for Java Virtual Machine; it is an abstract machine which provides the runtime environment in which Java byte code can be
+executed. It is a speci􀃕cation which speci􀃕es the working of Java Virtual Machine. Its implementation has been provided by Oracle and other
+companies. Its implementation is known as JRE.
+JVMs are available for many hardware and software platforms (so JVM is platform dependent). It is a runtime instance which is created when we run
+the Java class. There are three notions of the JVM: speci􀃕cation, implementation, and instance.
+JRE
+JRE stands for Java Runtime Environment. It is the implementation of JVM. The Java Runtime Environment is a set of software tools which are used for
+developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of
+libraries + other 􀃕les that JVM uses at runtime.
+JDK
+The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java
+Runtime Environment (JRE), an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (javadoc) and other tools
+needed in Java development.
+
+Q8. What is garbage collection ?
+Ans. The garbage collection is a facility wherein a program runs on the Java Virtual Machine which gets rid of objects, which are not being used by a
+Java application anymore. It is a form of automatic memory management and recollection.
+
+Q13. What is the purpose of garbage collection?
+Ans.The garbage collection process is to identify the objects which are no longer referenced or needed by a program so that their resources can be
+reclaimed and reused. These identi􀃕ed objects will be discarded.
+
+Q40. How garbage collection is done in Java?
+Ans: In java, when an object is not referenced any more, garbage collection takes place and the object is destroyed automatically. For automatic
+garbage collection java calls either System.gc() method or Runtime.gc() method.
+
+Q71. Is JDK required on each machine to run a Java program?
+Ans: JDK is development Kit of Java and is required for development only and to run a Java program on a machine, JDK isn’t required. Only JRE is
+required.
+
+7) Why java is platform independent?
+The most unique feature of java is platform independent. In any programming language soruce code is
+compiled in to executable code . This cannot be run across all platforms. When javac compiles a java
+program it generates an executable file called .class file.
+class file contains byte codes. Byte codes are interpreted only by JVM’s . Since these JVM’s are made
+available across all platforms by Sun Microsystems, we can execute this byte code in any platform. Byte
+code generated in windows environment can also be executed in linux environment. This makes java
+platform independent.
+
+9) What is difference between c++ and Java ?
+Java C++
+1) Java is platform independent C++ is platform dependent.
+2) There are no pointers in java There are pointers in C++.
+3) There is no operator overloading in java C ++ has operator overloading.
+4) There is garbage collection in java There is no garbage collection
+5) Supports multithreading Does’nt support multithreading
+6) There are no templates in java There are templates in java
+7) There are no global variables in java There are global variables in c++
+
+
+10) What is JIT compiler ?
+JIT compiler stands for Just in time compiler. JIT compiler compiles byte code in to executable code .
+JIT a part of JVM .JIT cannot convert complete java program in to executable code it converts as and
+when it is needed during execution.
+11) What is bytecode in java ?
+When a javac compiler compiler compiles a class it generates .class file. This .class file contains set of
+instructions called byte code. Byte code is a machine independent language and contains set of
+instructions which are to be executed only by JVM. JVM can understand this byte codes
+
+21) What is ASCII Code?
+ASCII stands for American Standard code for Information Interchange. ASCII character range is 0 to 255.
+We can’t add more characters to the ASCII Character set. ASCII character set supports only English. That
+6 | P a g e
+is the reason, if we see C language we can write c language only in English we can’t write in other
+languages because it uses ASCII code.
+
+22) What is Unicode ?
+Unicode is a character set developed by Unicode Consortium. To support all languages in the world Java
+supports Unicode values. Unicode characters were represented by 16 bits and its character range is 0-
+65,535.
+Java uses ASCII code for all input elements except for Strings,identifiers, and comments. If we
+
+23) Difference between Character Constant and String Constant in java ?
+Character constant is enclosed in single quotes. String constants are enclosed in double quotes. Character
+constants are single digit or character. String Constants are collection of characters.
+Ex :’2’, ‘A’
+Ex : “Hello World”
+
+24) What are constants and how to create constants in java?
+Constants are fixed values whose values cannot be changed during the execution of program. We create
+constants in java using final keyword.
+Ex : final int number =10;
+final String str=”java-interview –questions”
+>> is a right shift operator shifts all of the bits in a value to the right to a specified number of times.
+int a =15;
+a= a >> 3;
+The above line of code moves 15 three characters right.
+>>> is an unsigned shift operator used to shift right. The places which were vacated by shift are filled
+with zeroes
+
+Core java Interview questions on Coding Standards
+26) Explain Java Coding Standards for classes or Java coding conventions for classes?
+Sun has created Java Coding standards or Java Coding Conventions . It is recommended highly to follow
+java coding standards.
+Classnames should start with uppercase letter. Classnames names should be nouns. If Class name is of
+multiple words then the first letter of inner word must be capital letter.
+Ex : Employee, EmployeeDetails, ArrayList, TreeSet, HashSet
+27) Explain Java Coding standards for interfaces?
+1) Interface should start with uppercase letters
+2) Interfaces names should be adjectives
+Example : Runnable, Serializable, Marker, Cloneable
+28) Explain Java Coding standards for Methods?
+1) Method names should start with small letters.
+2) Method names are usually verbs
+3) If method contains multiple words, every inner word should start with uppercase letter.
+Ex : toString()
+4) Method name must be combination of verb and noun
+Ex : getCarName(),getCarNumber()
+29) Explain Java Coding Standards for variables ?
+1) Variable names should start with small letters.
+2) Variable names should be nouns
+3) Short meaningful names are recommended.
+4) If there are multiple words every innerword should start with Uppecase character.
+Ex : string,value,empName,empSalary
+30) Explain Java Coding Standards for Constants?
+Constants in java are created using static and final keywords.
+1) Constants contains only uppercase letters.
+2) If constant name is combination of two words it should be separated by underscore.
+3) Constant names are usually nouns.
+Ex:MAX_VALUE, MIN_VALUE, MAX_PRIORITY, MIN_PRIORITY
+
+Instanceof operator is used to test the object is of which type.
+Syntax : <reference expression> instanceof <destination type>
+Instanceof returns true if reference expression is subtype of destination type.
+Instanceof returns false if reference expression is null.
+
+36) What does null mean in java?
+When a reference variable doesn’t point to any value it is assigned null.
+Example : Employee employee;
+In the above example employee object is not instantiate so it is pointed no where
+
+
+
+
+
+
+Core Java Interview Questions
+1) What is the difference between an Abstract class and
+Interface?
+1. Abstract classes may have some executable methods and methods left
+unimplemented. Interfaces contain no implementation code.
+2. An class can implement any number of interfaces, but subclass at most one abstract
+class.
+3. An abstract class can have nonabstract methods. All methods of an interface are
+abstract.
+4. An abstract class can have instance variables. An interface cannot.
+5. An abstract class can define constructor. An interface cannot.
+6. An abstract class can have any visibility: public, protected, private or none
+(package). An interface's visibility must be public or none (package).
+7. An abstract class inherits from Object and includes methods such as clone() and
+equals().
+2) What are checked and unchecked exceptions?
+Java defines two kinds of exceptions :
+• Checked exceptions : Exceptions that inherit from the Exception class are
+checked exceptions. Client code has to handle the checked exceptions thrown by
+the API, either in a catch clause or by forwarding it outward with the throws clause.
+Examples - SQLException, IOxception.
+• Unchecked exceptions : RuntimeException also extends from Exception. However,
+all of the exceptions that inherit from RuntimeException get special treatment.
+There is no requirement for the client code to deal with them, and hence they are
+called unchecked exceptions. Example Unchecked exceptions are
+NullPointerException, OutOfMemoryError, DivideByZeroException typically,
+programming errors.
+3) What is a user defined exception?
+User-defined exceptions may be implemented by
+• defining a class to respond to the exception and
+• embedding a throw statement in the try block where the exception can occur or
+declaring that the method throws the exception (to another method where it is
+handled).
+The developer can define a new exception by deriving it from the Exception class as follows:
+public class MyException extends Exception {
+/* class definition of constructors (but NOT the exception handling code) goes here public MyException() {
+super();
+}
+public MyException( String errorMessage ) {
+super( errorMessage );
+}
+}
+The throw statement is used to signal the occurance of the exception within a try block.
+Often, exceptions are instantiated in the same statement in which they are thrown using the
+syntax.
+throw new MyException("I threw my own exception.")
+To handle the exception within the method where it is thrown, a catch statement that
+handles MyException, must follow the try block. If the developer does not want to handle
+the exception in the method itself, the method must pass the exception using the syntax:
+public myMethodName() throws MyException
+4) What is the difference between C++ & Java?
+Well as Bjarne Stroustrup says "..despite the syntactic similarities, C++ and Java are very
+different languages. In many ways, Java seems closer to Smalltalk than to C++..". Here are
+few I discovered:
+• Java is multithreaded
+• Java has no pointers
+• Java has automatic memory management (garbage collection)
+• Java is platform independent (Stroustrup may differ by saying "Java is a platform"
+• Java has built-in support for comment documentation
+• Java has no operator overloading
+• Java doesn’t provide multiple inheritance
+• There are no destructors in Java
+5) What are statements in JAVA ?
+Statements are equivalent to sentences in natural languages. A statement forms a complete
+unit of execution. The following types of expressions can be made into a statement by
+terminating the expression with a semicolon
+• Assignment expressions
+• Any use of ++ or --
+• Method calls
+• Object creation expressions
+These kinds of statements are called expression statements. In addition to these kinds of
+expression statements, there are two other kinds of statements. A declaration statement
+declares a variable. A control flow statement regulates the order in which statements get
+executed. The for loop and the if statement are both examples of control flow statements.
+6) What is JAR file?
+JavaARchive files are a big glob of Java classes, images, audio, etc., compressed to make
+one simple, smaller file to ease Applet downloading. Normally when a browser encounters
+an applet, it goes and downloads all the files, images, audio, used by the Applet separately.
+This can lead to slower downloads.
+7)What is JNI?
+JNI is an acronym of Java Native Interface. Using JNI we can call functions which are written
+in other languages from Java. Following are its advantages and disadvantages.
+Advantages:
+• You want to use your existing library which was previously written in other
+language.
+• You want to call Windows API function.
+• For the sake of execution speed.
+• You want to call API function of some server product which is in c or c++ from java
+client.
+Disadvantages:
+• You can’t say write once run anywhere.
+• Difficult to debug runtime error in native code.
+• Potential security risk.
+• You can’t call it from Applet.
+8) What is serialization?
+Quite simply, object serialization provides a program the ability to read or write a whole
+object to and from a raw byte stream. It allows Java objects and primitives to be encoded
+into a byte stream suitable for streaming to some type of network or to a file-system, or
+more generally, to a transmission medium or storage facility. A seralizable object must
+implement the Serilizable interface. We use ObjectOutputStream to write this object to a
+stream and ObjectInputStream to read it from the stream.
+9) Why there are some null interface in java ? What does it
+mean ? Give me some null interfaces in JAVA?
+Null interfaces act as markers..they just tell the compiler that the objects of this class need
+to be treated differently..some marker interfaces are : Serializable, Remote, Cloneable
+10) Is synchronised a modifier?indentifier??what is it??
+It's a modifier. Synchronized methods are methods that are used to control access to an
+object. A thread only executes a synchronized method after it has acquired the lock for the
+method's object or class. Synchronized statements are similar to synchronized methods. A
+synchronized statement can only be executed after a thread has acquired the lock for the
+object or class referenced in the synchronized statement.
+11) What is singleton class?where is it used?
+Singleton is a design pattern meant to provide one and only one instance of an object.
+Other objects can get a reference to this instance through a static method (class constructor
+is kept private). Why do we need one? Sometimes it is necessary, and often sufficient, to
+create a single instance of a given class. This has advantages in memory management, and
+for Java, in garbage collection. Moreover, restricting the number of instances may be
+necessary or desirable for technological or business reasons--for example, we may only
+want a single instance of a pool of database connections.
+12) What is a compilation unit?
+The smallest unit of source code that can be compiled, i.e. a .java file.
+13) Is string a wrapper class?
+String is a class, but not a wrapper class. Wrapper classes like (Integer) exist for each
+primitive type. They can be used to convert a primitive data value into an object, and viceversa.
+14) Why java does not have multiple inheritance?
+The Java design team strove to make Java:
+• Simple, object oriented, and familiar
+• Robust and secure
+• Architecture neutral and portable
+• High performance
+• Interpreted, threaded, and dynamic
+The reasons for omitting multiple inheritance from the Java language mostly stem from the
+"simple, object oriented, and familiar" goal. As a simple language, Java's creators wanted a
+language that most developers could grasp without extensive training. To that end, they
+worked to make the language as similar to C++ as possible (familiar) without carrying over
+C++'s unnecessary complexity (simple).
+In the designers' opinion, multiple inheritance causes more problems and confusion than it
+solves. So they cut multiple inheritance from the language (just as they cut operator
+overloading). The designers' extensive C++ experience taught them that multiple
+inheritance just wasn't worth the headache.
+15) Why java is not a 100% oops?
+Many people say this because Java uses primitive types such as int, char, double. But then
+all the rest are objects. Confusing question..
+16) What is a resource bundle?
+In its simplest form, a resource bundle is represented by a text file containing keys and a
+text value for each key.
+17) What is transient variable?
+Transient variable can't be serialize. For example if a variable is declared as transient in a
+Serializable class and the class is written to an ObjectStream, the value of the variable can't
+be written to the stream instead when the class is retrieved from the ObjectStream the
+value of the variable becomes null.
+18) What is Collection API?
+The Collection API is a set of classes and interfaces that support operation on collections of
+objects. These classes and interfaces are more flexible, more powerful, and more regular
+than the vectors, arrays, and hashtables if effectively replaces.
+Example of classes: HashSet, HashMap, ArrayList, LinkedList, TreeSet and TreeMap.
+Example of interfaces: Collection, Set, List and Map.
+19) Is Iterator a Class or Interface? What is its use?
+Iterator is an interface which is used to step through the elements of a Collection.
+20) What is similarities/difference between an Abstract
+class and Interface?
+Differences are as follows:
+• Interfaces provide a form of multiple inheritance. A class can extend only one other
+class.
+• Interfaces are limited to public methods and constants with no implementation.
+Abstract classes can have a partial implementation, protected parts, static methods,
+etc.
+• A Class may implement several interfaces. But in case of abstract class, a class may
+extend only one abstract class.
+• Interfaces are slow as it requires extra indirection to to find corresponding method
+in in the actual class. Abstract classes are fast.
+Similarities:
+• Neither Abstract classes or Interface can be instantiated.
+21) What is a transient variable?
+A transient variable is a variable that may not be serialized.
+22) Which containers use a border Layout as their default
+layout?
+The window, Frame and Dialog classes use a border layout as their default layout.
+23) Why do threads block on I/O?
+Threads block on i/o (that is enters the waiting state) so that other threads may execute
+while the i/o Operation is performed.
+24) How are Observer and Observable used?
+Objects that subclass the Observable class maintain a list of observers. When an Observable
+object is updated it invokes the update() method of each of its observers to notify the
+observers that it has changed state. The Observer interface is implemented by objects that
+observe Observable objects.
+25) What is synchronization and why is it important?
+With respect to multithreading, synchronization is the capability to control the access of
+multiple threads to shared resources. Without synchronization, it is possible for one thread
+to modify a shared object while another thread is in the process of using or updating that
+object's value. This often leads to significant errors.
+26) Can a lock be acquired on a class?
+Yes, a lock can be acquired on a class. This lock is acquired on the class's Class object..
+27) What's new with the stop(), suspend() and resume()
+methods in JDK 1.2?
+The stop(), suspend() and resume() methods have been deprecated in JDK 1.2.
+28) Is null a keyword?
+The null value is not a keyword.
+29) What is the preferred size of a component?
+The preferred size of a component is the minimum component size that will allow the
+component to display normally.
+30) What method is used to specify a container's layout?
+The setLayout() method is used to specify a container's layout.
+31) Which containers use a FlowLayout as their default
+layout?
+The Panel and Applet classes use the FlowLayout as their default layout.
+32) What state does a thread enter when it terminates its
+processing?
+When a thread terminates its processing, it enters the dead state.
+33) What is the Collections API?
+The Collections API is a set of classes and interfaces that support operations on collections
+of objects.
+34) Which characters may be used as the second character
+of an identifier, but not as the first character of an
+identifier?
+The digits 0 through 9 may not be used as the first character of an identifier but they may
+be used after the first character of an identifier.
+35) What is the List interface?
+The List interface provides support for ordered collections of objects.
+36) How does Java handle integer overflows and
+underflows?
+It uses those low order bytes of the result that can fit into the size of the type allowed by
+the operation.
+37) What is the Vector class?
+The Vector class provides the capability to implement a growable array of objects
+38) What modifiers may be used with an inner class that is
+a member of an outer class?
+A (non-local) inner class may be declared as public, protected, private, static, final, or
+abstract.
+39) What is an Iterator interface?
+The Iterator interface is used to step through the elements of a Collection.
+40) What is the difference between the >> and >>>
+operators?
+The >> operator carries the sign bit when shifting right. The >>> zero-fills bits that have
+been shifted out.
+41) Which method of the Component class is used to set
+the position and size of a component?
+setBounds()
+42) How many bits are used to represent Unicode, ASCII,
+UTF-16, and UTF-8 characters?
+Unicode requires 16 bits and ASCII require 7 bits. Although the ASCII character set uses
+only 7 bits, it is usually represented as 8 bits. UTF-8 represents characters using 8, 16, and
+18 bit patterns. UTF-16 uses 16-bit and larger bit patterns.
+43) What is the difference between yielding and sleeping?
+When a task invokes its yield() method, it returns to the ready state. When a task invokes
+its sleep() method, it returns to the waiting state.
+44) Which java.util classes and interfaces support event
+handling?
+The EventObject class and the EventListener interface support event processing.
+45) Is sizeof a keyword?
+The sizeof operator is not a keyword.
+46) What are wrapped classes?
+Wrapped classes are classes that allow primitive types to be accessed as objects.
+47) Does garbage collection guarantee that a program will
+not run out of memory?
+Garbage collection does not guarantee that a program will not run out of memory. It is
+possible for programs to use up memory resources faster than they are garbage collected.
+It is also possible for programs to create objects that are not subject to garbage collection
+48) What restrictions are placed on the location of a
+package statement within a source code file?
+A package statement must appear as the first line in a source code file (excluding blank
+lines and comments).
+49) Can an object's finalize() method be invoked while it is
+reachable?
+An object's finalize() method cannot be invoked by the garbage collector while the object is
+still reachable. However, an object's finalize() method may be invoked by other objects.
+50) What is the immediate superclass of the Applet class?
+Panel
+51) What is the difference between preemptive scheduling
+and time slicing?
+Under preemptive scheduling, the highest priority task executes until it enters the waiting or
+dead states or a higher priority task comes into existence. Under time slicing, a task
+executes for a predefined slice of time and then reenters the pool of ready tasks. The
+scheduler then determines which task should execute next, based on priority and other
+factors.
+52) Name three Component subclasses that support
+painting.
+The Canvas, Frame, Panel, and Applet classes support painting.
+53) What value does readLine() return when it has
+reached the end of a file?
+The readLine() method returns null when it has reached the end of a file.
+54) What is the immediate superclass of the Dialog class?
+Window
+55) What is clipping?
+Clipping is the process of confining paint operations to a limited area or shape.
+56) What is a native method?
+A native method is a method that is implemented in a language other than Java.
+57) Can a for statement loop indefinitely?
+Yes, a for statement can loop indefinitely. For example, consider the following:
+for(;;) ;
+58) What are order of precedence and associativity, and
+how are they used?
+Order of precedence determines the order in which operators are evaluated in expressions.
+Associatity determines whether an expression is evaluated left-to-right or right-to-left
+59) When a thread blocks on I/O, what state does it
+enter?
+A thread enters the waiting state when it blocks on I/O.
+60) To what value is a variable of the String type
+automatically initialized?
+The default value of an String type is null.
+61) What is the catch or declare rule for method
+declarations?
+If a checked exception may be thrown within the body of a method, the method must either
+catch the exception or declare it in its throws clause.
+62) What is the difference between a MenuItem and a
+CheckboxMenuItem?
+The CheckboxMenuItem class extends the MenuItem class to support a menu item that may
+be checked or unchecked.
+63) What is a task's priority and how is it used in
+scheduling?
+A task's priority is an integer value that identifies the relative order in which it should be
+executed with respect to other tasks. The scheduler attempts to schedule higher priority
+tasks before lower priority tasks.
+64) What class is the top of the AWT event hierarchy?
+The java.awt.AWTEvent class is the highest-level class in the AWT event-class hierarchy.
+65) When a thread is created and started, what is its initial
+state?
+A thread is in the ready state after it has been created and started.
+66) Can an anonymous class be declared as implementing
+an interface and extending a class?
+An anonymous class may implement an interface or extend a superclass, but may not be
+declared to do both.
+67) What is the range of the short type?
+The range of the short type is -(2^15) to 2^15 - 1.
+68) What is the range of the char type?
+The range of the char type is 0 to 2^16 - 1.
+69) In which package are most of the AWT events that
+support the event-delegation model defined?
+Most of the AWT-related events of the event-delegation model are defined in the
+java.awt.event package. The AWTEvent class is defined in the java.awt package.
+70) What is the immediate superclass of Menu?
+MenuItem
+71) What is the purpose of finalization?
+The purpose of finalization is to give an unreachable object the opportunity to perform any
+cleanup processing before the object is garbage collected.
+72) Which class is the immediate superclass of the
+MenuComponent class.
+Object
+73) What invokes a thread's run() method?
+After a thread is started, via its start() method or that of the Thread class, the JVM invokes
+the thread's run() method when the thread is initially executed.
+74) What is the difference between the Boolean & operator
+and the && operator?
+If an expression involving the Boolean & operator is evaluated, both operands are
+evaluated. Then the & operator is applied to the operand. When an expression involving the
+&& operator is evaluated, the first operand is evaluated. If the first operand returns a value
+of true then the second operand is evaluated. The && operator is then applied to the first
+and second operands. If the first operand evaluates to false, the evaluation of the second
+operand is skipped.
+75) Name three subclasses of the Component class.
+Box.Filler, Button, Canvas, Checkbox, Choice, Container, Label, List, Scrollbar, or
+TextComponent
+76) What is the GregorianCalendar class?
+The GregorianCalendar provides support for traditional Western calendars.
+77) Which Container method is used to cause a container
+to be laid out and redisplayed?
+validate()
+78) What is the purpose of the Runtime class?
+The purpose of the Runtime class is to provide access to the Java runtime system.
+79) How many times may an object's finalize() method be
+invoked by the garbage collector?
+An object's finalize() method may only be invoked once by the garbage collector.
+80) What is the purpose of the finally clause of a try-catchfinally
+statement?
+The finally clause is used to provide the capability to execute code no matter whether or not
+an exception is thrown or caught.
+81) What is the argument type of a program's main()
+method?
+A program's main() method takes an argument of the String[] type.
+82) Which Java operator is right associative?
+The = operator is right associative.
+83) What is the Locale class?
+The Locale class is used to tailor program output to the conventions of a particular
+geographic, political, or cultural region.
+84) Can a double value be cast to a byte?
+Yes, a double value can be cast to a byte.
+85) What is the difference between a break statement and
+a continue statement?
+A break statement results in the termination of the statement to which it applies (switch,
+for, do, or while). A continue statement is used to end the current loop iteration and return
+control to the loop statement.
+86) What must a class do to implement an interface?
+It must provide all of the methods in the interface and identify the interface in its
+implements clause.
+87) What method is invoked to cause an object to begin
+executing as a separate thread?
+The start() method of the Thread class is invoked to cause an object to begin executing as a
+separate thread.
+88) Name two subclasses of the TextComponent class.
+TextField and TextArea
+89) What is the advantage of the event-delegation model
+over the earlier eventinheritance model?
+The event-delegation model has two advantages over the event-inheritance model. First, it
+enables event handling to be handled by objects other than the ones that generate the
+events (or their containers). This allows a clean separation between a component's design
+and its use. The other advantage of the event-delegation model is that it performs much
+better in applications where many events are generated. This performance improvement is
+due to the fact that the event-delegation model does not have to repeatedly process
+unhandled events, as is the case of the event-inheritance model.
+90) Which containers may have a MenuBar?
+Frame
+91) How are commas used in the intialization and iteration
+parts of a for statement?
+Commas are used to separate multiple statements within the initialization and iteration
+parts of a for statement.
+92) What is the purpose of the wait(), notify(), and
+notifyAll() methods?
+The wait(),notify(), and notifyAll() methods are used to provide an efficient way for threads
+to wait for a shared resource. When a thread executes an object's wait() method, it enters
+the waiting state. It only enters the ready state after another thread invokes the object's
+notify() or notifyAll() methods..
+93) What is an abstract method?
+An abstract method is a method whose implementation is deferred to a subclass.
+94) How are Java source code files named?
+A Java source code file takes the name of a public class or interface that is defined within
+the file. A source code file may contain at most one public class or interface. If a public class
+or interface is defined within a source code file, then the source code file must take the
+name of the public class or interface. If no public class or interface is defined within a source
+code file, then the file must take on a name that is different than its classes and interfaces.
+Source code files use the .java extension.
+95) What is the relationship between the Canvas class and
+the Graphics class?
+A Canvas object provides access to a Graphics object via its paint() method.
+96) What are the high-level thread states?
+The high-level thread states are ready, running, waiting, and dead.
+97) What value does read() return when it has reached the
+end of a file?
+The read() method returns -1 when it has reached the end of a file.
+98) Can a Byte object be cast to a double value?
+No, an object cannot be cast to a primitive value.
+99) What is the difference between a static and a nonstatic
+inner class?
+A non-static inner class may have object instances that are associated with instances of the
+class's outer class. A static inner class does not have any object instances.
+100) What is the difference between the String and
+StringBuffer classes?
+String objects are constants. StringBuffer objects are not.
+101) If a variable is declared as private, where may the
+variable be accessed?
+A private variable may only be accessed within the class in which it is declared.
+102) What is an object's lock and which object's have
+locks?
+An object's lock is a mechanism that is used by multiple threads to obtain synchronized
+access to the object. A thread may execute a synchronized method of an object only after it
+has acquired the object's lock. All objects and classes have locks. A class's lock is acquired
+on the class's Class object.
+103) What is the Dictionary class?
+The Dictionary class provides the capability to store key-value pairs.
+104) How are the elements of a BorderLayout organized?
+The elements of a BorderLayout are organized at the borders (North, South, East, and
+West) and the center of a container.
+105) What is the % operator?
+It is referred to as the modulo or remainder operator. It returns the remainder of dividing
+the first operand by the second operand.
+106) When can an object reference be cast to an interface
+reference?
+An object reference be cast to an interface reference when the object implements the
+referenced interface.
+107) What is the difference between a Window and a
+Frame?
+The Frame class extends Window to define a main application window that can have a menu
+bar.
+108) Which class is extended by all other classes?
+The Object class is extended by all other classes.
+109) Can an object be garbage collected while it is still
+reachable?
+A reachable object cannot be garbage collected. Only unreachable objects may be garbage
+collected..
+110) Is the ternary operator written x : y ? z or x ? y : z ?
+It is written x ? y : z.
+111) What is the difference between the Font and
+FontMetrics classes?
+The FontMetrics class is used to define implementation-specific properties, such as ascent
+and descent, of a Font object.
+112) How is rounding performed under integer division?
+The fractional part of the result is truncated. This is known as rounding toward zero.
+113) What happens when a thread cannot acquire a lock
+on an object?
+If a thread attempts to execute a synchronized method or synchronized statement and is
+unable to acquire an object's lock, it enters the waiting state until the lock becomes
+available.
+114) What is the difference between the Reader/Writer
+class hierarchy and the InputStream/OutputStream class
+hierarchy?
+The Reader/Writer class hierarchy is character-oriented, and the InputStream/
+OutputStream class hierarchy is byte-oriented.
+115) What classes of exceptions may be caught by a catch
+clause?
+A catch clause can catch any exception that may be assigned to the Throwable type. This
+includes the Error and Exception types.
+116) If a class is declared without any access modifiers,
+where may the class be accessed?
+A class that is declared without any access modifiers is said to have package access. This
+means that the class can only be accessed by other classes and interfaces that are defined
+within the same package.
+117) What is the SimpleTimeZone class?
+The SimpleTimeZone class provides support for a Gregorian calendar.
+118) What is the Map interface?
+The Map interface replaces the JDK 1.1 Dictionary class and is used associate keys with
+values.
+119) Does a class inherit the constructors of its
+superclass?
+A class does not inherit constructors from any of its superclasses.
+120) For which statements does it make sense to use a
+label?
+The only statements for which it makes sense to use a label are those statements that can
+enclose a break or continue statement.
+121) What is the purpose of the System class?
+The purpose of the System class is to provide access to system resources.
+122) Which TextComponent method is used to set a
+TextComponent to the read-only state?
+setEditable()
+123) How are the elements of a CardLayout organized?
+The elements of a CardLayout are stacked, one on top of the other, like a deck of cards.
+124) Is &&= a valid Java operator?
+No, it is not.
+125) Name the eight primitive Java types?
+The eight primitive types are byte, char, short, int, long, float, double, and boolean.
+126) Which class should you use to obtain design
+information about an object?
+The Class class is used to obtain information about an object's design.
+127) What is the relationship between clipping and
+repainting?
+When a window is repainted by the AWT painting thread, it sets the clipping regions to the
+area of the window that requires repainting.
+128) Is "abc" a primitive value?
+The String literal "abc" is not a primitive value. It is a String object.
+129) What is the relationship between an event-listener
+interface and an event-adapter class?
+An event-listener interface defines the methods that must be implemented by an event
+handler for a particular kind of event. An event adapter provides a default implementation
+of an event-listener interface.
+130) What restrictions are placed on the values of each
+case of a switch statement?
+During compilation, the values of each case of a switch statement must evaluate to a value
+that can be promoted to an int value.
+131) What modifiers may be used with an interface
+declaration?
+An interface may be declared as public or abstract.
+132) Is a class a subclass of itself?
+A class is a subclass of itself.
+133) What is the highest-level event class of the eventdelegation
+model?
+The java.util.EventObject class is the highest-level class in the event-delegation class
+hierarchy.
+134) What event results from the clicking of a button?
+The ActionEvent event is generated as the result of the clicking of a button.
+135) How can a GUI component handle its own events?
+A component can handle its own events by implementing the required event-listener
+interface and adding itself as its own event listener.
+136) What is the difference between a while statement
+and a do statement?
+A while statement checks at the beginning of a loop to see whether the next loop iteration
+should occur. A do statement checks at the end of a loop to see whether the next iteration
+of a loop should occur. The do statement will always execute the body of a loop at least
+once.
+137) How are the elements of a GridBagLayout organized?
+The elements of a GridBagLayout are organized according to a grid. However, the elements
+are of different sizes and may occupy more than one row or column of the grid.
+In addition, the rows and columns may have different sizes.
+138) What advantage do Java's layout managers provide
+over traditional windowing systems?
+Java uses layout managers to lay out components in a consistent manner across all
+windowing platforms. Since Java's layout managers aren't tied to absolute sizing and
+positioning, they are able to accomodate platform-specific differences among windowing
+systems.
+139) What is the Collection interface?
+The Collection interface provides support for the implementation of a mathematical bag - an
+unordered collection of objects that may contain duplicates.
+140) What modifiers can be used with a local inner class?
+A local inner class may be final or abstract.
+141) What is the difference between static and non-static
+variables?
+A static variable is associated with the class as a whole rather than with specific instances of
+a class. Non-static variables take on unique values with each object instance.
+142) What is the difference between the paint() and
+repaint() methods?
+The paint() method supports painting via a Graphics object. The repaint() method is used to
+cause paint() to be invoked by the AWT painting thread.
+143) What is the purpose of the File class?
+The File class is used to create objects that provide access to the files and directories of a
+local file system.
+144) Can an exception be rethrown?
+Yes, an exception can be rethrown.
+145) Which Math method is used to calculate the absolute
+value of a number?
+The abs() method is used to calculate absolute values.
+146) How does multithreading take place on a computer
+with a single CPU?
+The operating system's task scheduler allocates execution time to multiple tasks. By quickly
+switching between executing tasks, it creates the impression that tasks execute
+sequentially.
+147) When does the compiler supply a default constructor
+for a class?
+The compiler supplies a default constructor for a class if no other constructors are provided.
+148) When is the finally clause of a try-catch-finally
+statement executed?
+The finally clause of the try-catch-finally statement is always executed unless the thread of
+execution terminates or an exception occurs within the execution of the finally clause.
+149) Which class is the immediate superclass of the
+Container class?
+Component
+150) If a method is declared as protected, where may the
+method be accessed?
+A protected method may only be accessed by classes or interfaces of the same package or
+by subclasses of the class in which it is declared.
+151) How can the Checkbox class be used to create a radio
+button?
+By associating Checkbox objects with a CheckboxGroup.
+152) Which non-Unicode letter characters may be used as
+the first character of an identifier?
+The non-Unicode letter characters $ and _ may appear as the first character of an identifier
+153) What restrictions are placed on method overloading?
+Two methods may not have the same name and argument list but different return types.
+154) What happens when you invoke a thread's interrupt
+method while it is sleeping or waiting?
+When a task's interrupt() method is executed, the task enters the ready state. The next
+time the task enters the running state, an InterruptedException is thrown.
+155) What is casting?
+There are two types of casting, casting between primitive numeric types and casting
+between object references. Casting between numeric types is used to convert larger values,
+such as double values, to smaller values, such as byte values. Casting between object
+references is used to refer to an object by a compatible class, interface, or array type
+reference.
+156) What is the return type of a program's main()
+method?
+A program's main() method has a void return type.
+157) Name four Container classes.
+Window, Frame, Dialog, FileDialog, Panel, Applet, or ScrollPane
+158) What is the difference between a Choice and a List?
+A Choice is displayed in a compact form that requires you to pull it down to see the list of
+available choices. Only one item may be selected from a Choice. A List may be displayed in
+such a way that several List items are visible. A List supports the selection of one or more
+List items.
+159) What class of exceptions are generated by the Java
+run-time system?
+The Java runtime system generates RuntimeException and Error exceptions.
+160) What class allows you to read objects directly from a
+stream?
+The ObjectInputStream class supports the reading of objects from input streams.
+161) What is the difference between a field variable and a
+local variable?
+A field variable is a variable that is declared as a member of a class. A local variable is a
+variable that is declared local to a method.
+162) Under what conditions is an object's finalize()
+method invoked by the garbage collector?
+The garbage collector invokes an object's finalize() method when it detects that the object
+has become unreachable.
+163) How are this() and super() used with constructors?
+this() is used to invoke a constructor of the same class. super() is used to invoke a
+superclass constructor.
+164) What is the relationship between a method's throws
+clause and the exceptions that can be thrown during the
+method's execution?
+A method's throws clause must declare any checked exceptions that are not caught within
+the body of the method.
+165) What is the difference between the JDK 1.02 event
+model and the event-delegation model introduced with
+JDK 1.1?
+The JDK 1.02 event model uses an event inheritance or bubbling approach. In this model,
+components are required to handle their own events. If they do not handle a particular
+event, the event is inherited by (or bubbled up to) the component's container. The container
+then either handles the event or it is bubbled up to its container and so on, until the
+highest-level container has been tried..
+In the event-delegation model, specific objects are designated as event handlers for GUI
+components. These objects implement event-listener interfaces. The event-delegation
+model is more efficient than the event-inheritance model because it eliminates the
+processing required to support the bubbling of unhandled events.
+166) How is it possible for two String objects with
+identical values not to be equal under the == operator?
+The == operator compares two objects to determine if they are the same object in memory.
+It is possible for two String objects to have the same value, but located indifferent areas of
+memory.
+167) Why are the methods of the Math class static?
+So they can be invoked as if they are a mathematical code library.
+168) What Checkbox method allows you to tell if a
+Checkbox is checked?
+getState()
+169) What state is a thread in when it is executing?
+An executing thread is in the running state.
+170) What are the legal operands of the instanceof
+operator?
+The left operand is an object reference or null value and the right operand is a class,
+interface, or array type.
+171) How are the elements of a GridLayout organized?
+The elements of a GridBad layout are of equal size and are laid out using the squares of a
+grid.
+172) What an I/O filter?
+An I/O filter is an object that reads from one stream and writes to another, usually altering
+the data in some way as it is passed from one stream to another.
+173) If an object is garbage collected, can it become
+reachable again?
+Once an object is garbage collected, it ceases to exist. It can no longer become reachable
+again.
+174) What is the Set interface?
+The Set interface provides methods for accessing the elements of a finite mathematical set.
+Sets do not allow duplicate elements.
+175) What classes of exceptions may be thrown by a throw
+statement?
+A throw statement may throw any expression that may be assigned to the Throwable type.
+176) What are E and PI?
+E is the base of the natural logarithm and PI is mathematical value pi.
+177) Are true and false keywords?
+The values true and false are not keywords.
+178) What is a void return type?
+A void return type indicates that a method does not return a value.
+179) What is the purpose of the enableEvents() method?
+The enableEvents() method is used to enable an event for a particular object. Normally, an
+event is enabled when a listener is added to an object for a particular event. The
+enableEvents() method is used by objects that handle events by overriding their
+eventdispatch methods.
+180) What is the difference between the File and
+RandomAccessFile classes?
+The File class encapsulates the files and directories of the local file system. The
+RandomAccessFile class provides the methods needed to directly access data contained in
+any part of a file.
+181) What happens when you add a double value to a
+String?
+The result is a String object.
+182) What is your platform's default character encoding?
+If you are running Java on English Windows platforms, it is probably Cp1252. If you are
+running Java on English Solaris platforms, it is most likely 8859_1..
+183) Which package is always imported by default?
+The java.lang package is always imported by default.
+184) What interface must an object implement before it
+can be written to a stream as an object?
+An object must implement the Serializable or Externalizable interface before it can be
+written to a stream as an object.
+185) How are this and super used?
+this is used to refer to the current object instance. super is used to refer to the variables
+and methods of the superclass of the current object instance.
+186) What is the purpose of garbage collection?
+The purpose of garbage collection is to identify and discard objects that are no longer
+needed by a program so that their resources may be reclaimed and reused.
+187) What is a compilation unit?
+A compilation unit is a Java source code file.
+188) What interface is extended by AWT event listeners?
+All AWT event listeners extend the java.util.EventListener interface.
+189) What restrictions are placed on method overriding?
+• Overridden methods must have the same name, argument list, and return type.
+• The overriding method may not limit the access of the method it overrides.
+• The overriding method may not throw any exceptions that may not be thrownby the
+overridden method.
+190) How can a dead thread be restarted?
+A dead thread cannot be restarted.
+191) What happens if an exception is not caught?
+An uncaught exception results in the uncaughtException() method of the thread's
+ThreadGroup being invoked, which eventually results in the termination of the program in
+which it is thrown.
+192) What is a layout manager?
+A layout manager is an object that is used to organize components in a container.
+193) Which arithmetic operations can result in the
+throwing of an ArithmeticException?
+Integer / and % can result in the throwing of an ArithmeticException.
+194) What are three ways in which a thread can enter the
+waiting state?
+A thread can enter the waiting state by invoking its sleep() method, by blocking on I/O, by
+unsuccessfully attempting to acquire an object's lock, or by invoking an object's wait()
+method. It can also enter the waiting state by invoking its (deprecated) suspend() method.
+195) Can an abstract class be final?
+An abstract class may not be declared as final.
+196) What is the ResourceBundle class?
+The ResourceBundle class is used to store locale-specific resources that can be loaded by a
+program to tailor the program's appearance to the particular locale in which it is being run.
+197) What happens if a try-catch-finally statement does
+not have a catch clause to handle an exception that is
+thrown within the body of the try statement?
+The exception propagates up to the next higher level try-catch statement (if any) or results
+in the program's termination.
+198) What is numeric promotion?
+Numeric promotion is the conversion of a smaller numeric type to a larger numeric type, so
+that integer and floating-point operations may take place. In numerical promotion, byte,
+char, and short values are converted to int values. The int values are also converted to long
+values, if necessary. The long and float values are converted to double values, as required.
+199) What is the difference between a Scrollbar and a
+ScrollPane?
+A Scrollbar is a Component, but not a Container. A ScrollPane is a Container. A ScrollPane
+handles its own events and performs its own scrolling.
+200) What is the difference between a public and a nonpublic
+class?
+A public class may be accessed outside of its package. A non-public class may not be
+accessed outside of its package.
+201) To what value is a variable of the boolean type
+automatically initialized?
+The default value of the boolean type is false.
+202) Can try statements be nested?
+Try statements may be tested.
+203) What is the difference between the prefix and postfix
+forms of the ++ operator?
+The prefix form performs the increment operation and returns the value of the increment
+operation. The postfix form returns the current value all of the expression and then
+performs the increment operation on that value.
+204) What is the purpose of a statement block?
+A statement block is used to organize a sequence of statements as a single statement
+group.
+205) What is a Java package and how is it used?
+A Java package is a naming context for classes and interfaces. A package is used to create a
+separate name space for groups of classes and interfaces. Packages are also used to
+organize related classes and interfaces into a single API unit and to control accessibility to
+these classes and interfaces.
+206) What modifiers may be used with a top-level class?
+A top-level class may be public, abstract, or final.
+207) What are the Object and Class classes used for?
+The Object class is the highest-level class in the Java class hierarchy. The Class class is
+used to represent the classes and interfaces that are loaded by a Java program..
+208) How does a try statement determine which catch
+clause should be used to handle an exception?
+When an exception is thrown within the body of a try statement, the catch clauses of the try
+statement are examined in the order in which they appear. The first catch clause that is
+capable of handling the exception is executed. The remaining catch clauses are ignored.
+209) Can an unreachable object become reachable again?
+An unreachable object may become reachable again. This can happen when the object's
+finalize() method is invoked and the object performs an operation which causes it to
+become accessible to reachable objects.
+210) When is an object subject to garbage collection?
+An object is subject to garbage collection when it becomes unreachable to the program in
+which it is used.
+211) What method must be implemented by all threads?
+All tasks must implement the run() method, whether they are a subclass of Thread or
+implement the Runnable interface.
+212) What methods are used to get and set the text label
+displayed by a Button object?
+getLabel() and setLabel()
+213) Which Component subclass is used for drawing and
+painting?
+Canvas
+214) What are synchronized methods and synchronized
+statements?
+Synchronized methods are methods that are used to control access to an object. A thread
+only executes a synchronized method after it has acquired the lock for the method's object
+or class. Synchronized statements are similar to synchronized methods. A synchronized
+statement can only be executed after a thread has acquired the lock for the object or class
+referenced in the synchronized statement.
+215) What are the two basic ways in which classes that
+can be run as threads may be defined?
+A thread class may be declared as a subclass of Thread, or it may implement the Runnable
+interface.
+216) What are the problems faced by Java programmers
+who don't use layout managers?
+Without layout managers, Java programmers are faced with determining how their GUI will
+be displayed across multiple windowing systems and finding a common sizing and
+positioning that will work within the constraints imposed by each windowing system.
+217) What is the difference between an if statement and a
+switch statement?
+The if statement is used to select among two alternatives. It uses a boolean expression to
+decide which alternative should be executed. The switch statement is used to select among
+multiple alternatives. It uses an int expression to determine which alternative should be
+executed.
+218) What happens when you add a double value to a
+String?
+The result is a String object.
+219) What is the List interface?
+The List interface provides support for ordered collections of objects.
+
+
+Q1. Can we define static variables inside the static method or not? 
+Q2. In project when we will instance & static varaibles give the scenario? 
+Q3. When we will use for vs. for-each? 
+Q4. Define JDK vs. JRE vs. JVM?
+Q5. How many parts of java?
+Q6. What is the purpose of methods? 
+Q7. Define class vs.Object?
+Q8. Define and(&),or(|)?
+Q9. Define the constructor?
+Q10. define break vs. continue? 
+Q11.  Define the package in java? 
+Q12. What is the difference between bitwise & logical operator? 
+Q13. What are the entry controlled loop & exit controll loop? 
+Q14. When we will get StackOverflowError?
+Q15. Explain instance & static blocks? What is the purpose of blocks? 
+Q16.  What are the different ways to load the .class file into memory?
+Q17. How to call the constructor in java?Is it one constructor can call multiple constructors? 
+Q18. What is method recursion?
+Q19. What are the Different ways to call the static members in java?
+Q20. When we will use switch & else-if statements in Application?
+Q21. When we will use for vs. while loops in Application?
+Q22. Can we access the other packages classes without import statements?
+Q23. What is the difference between the normal import & static import?
+Q24. What are the modifiers applicable to constructors?
+Q25. Explain System.out.println()?
+Q26. Can we access sub-packages data when we import main package with*?
+Q27. What are the Permission/Scoping modifiers in java?
+Q28. Define inheritance? how many types inheritance in java?
+Q29. Explain about Object class in java? 
+Q30. Define the Polymorphism? How many types of Polymorphisms in java?
+Q31. What are the Different types of overloading in java? What is the advantage? 
+Q32. What is method Overriding? what is the advantage?
+Q33. What are the rules to fallow while overriding the method?
+Q34. What is Co-variant return type in java?
+Q35. What is Method overriding & method hiding in java?
+Q36. What is the advantage of parent class reference hilding the Child class object? or What is runtime polymorphism? 
+Q37. Explain about final modifier/prevention modifier in java?
+Q38. Define abstract methods & normal methods in java?
+Q39. Explain normal classes & abstract classes in java? 
+Q40. what is the abstraction concept in java? What is the advantage of abstraction?
+Q41. Explain about interfaces in java? 
+Q42. What is the difference between interfaces & abstract classes & normal classes & client code?
+Q43. How to clone the objects in java? What is the advantage?
+Q44. What the new features about interfaces in java?
+Q45. Explain about functional interfaces in java? 
+Q46. What is the meaning of Automatic garbage collection?
+Q47. What are the Different ways to call the Garbage Collector?
+Q48. What are the Different ways to make the object un-referenced?
+Q49. Explain Encapsulation mechanism in java?
+Q50. What are the different ways to initialize the data in java explain?
+Q51. Define type conversion? what are the different types of type conversions in java?  
+Q52. Why method signature of main() method is always public static void main(String[] args) ?
+Q53. Though interface is a pure abstract class then why interfaces are needed    
+Q54. Define the exception? What is the main objective of exception handling?
+Q55. what are the types of exceptions in java?
+Q56. What are the differnet ways to handle the exceptions in java? 
+Q57. What are the possible ways to handle the multiple exceptions in java?
+Q58. What is the purpose of try-with resources concept?
+Q59. What is the purpose of finally block?
+Q60. What is the purpose of throw keyword? How to handle the userdefined exceptions in java? 
+Q61.What are the difference ways to create String object?
+Q62. what is the difference == operator & equals() method?
+Q63. What is the difference between String vs. StringBuffer?
+Q64. What is the difference between equals() vs. compareTo()?
+Q65. What is the difference between StringBuffer & StringBuilder?
+Q66. What are the advanatges of Wrapper classes?
+Q67. Define Autoboxing & Auto-unboxing?
+Q68. What is the purpose of enum?
+Q69. What is the purpose of Annotation?
+Q70. How to perform read & write operations on text files & images?
+Q71. What are the difference between normal Streams & buffered streams?
+Q72. How to create & remove the files & directories in java?
+Q73. what are the advantages of nested classes in java?
+Q74. Define lambda expression in java?
+Q75. What is method reference concept in java? 
+Q76. What is Reflection mechanism in java?
+Q77. What are the main components of JVM?
+Q78. Define the Thread? What are the advantages of multithreading?
+Q79. What are the different ways to create a thread? Explain start() run() methods? 
+Q80. What’s the difference between class lock and object lock?
+Q81. Explain Daemon & non-Daemon threads in java?
+Q82. Explain thread names & priority in java?
+Q83. Explain sleep() vs. join() vs. wait()? 
+Q84. What is the purpose of Assertions in java?
+Q85. Define the array? what are the advantages of arrays?
+Q86. What is the main objective of Collection framework? What are the parts in Collections f/w?
+Q87. What are the difference between Collections & Arrays?
+Q88. What are the difference between List & Set?
+Q89. How to add one collection data into another?
+Q90. What are the Differences between ArrayList & LinkedList?
+Q91. What are the Differeent ways to read the data from collection classes?
+Q92. What is the purpose of cursor? Explain the cursors in java?
+Q93. What are the conditions we need to fallow while sorting Collection data?
+Q94. what is the purpose of serialization & Desrialization process? How to prevent serialization?
+Q95. What is Type Earser in java?
+Q96. What is the Difference between Comparable vs. Comparator?
+Q97. In application when we will use Map classes?
+Q98. What is the purpose of streams API in java?
+Q99. How to convert Arrays to Collections & Collections to Arrays?
+Q100. What is the purpose of WildCard symbol(?) in Generics?.

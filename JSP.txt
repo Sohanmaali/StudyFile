@@ -1,0 +1,10 @@
+12 JSP 28
+12.1 What is a JSP Page ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+12.2 How are the JSP requests handled ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+12.3 What are the advantages of JSP ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+12.4 What are Directives ? What are the different types of Directives available in JSP ? . . . . . . . . . . . . . . . . . 28
+12.5 What are JSP actions ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+12.6 What are Scriptlets ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+12.7 What are Decalarations ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+12.8 What are Expressions ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+12.9 What is meant by implicit objects and what are they ?

@@ -1,0 +1,88 @@
+Q5. What is a 􀃕nal method ?
+Ans. It’s a method which cannot be overridden. Compiler throws an error if we try to override a method which has been declared 􀃕nal in the parent
+class.
+
+Q7. What are Default Methods?
+Ans. With Java 8, We can provide method de􀃕nitions in the Interfaces that gets carried down the classes implementing that interface in case they are
+not overridden by the Class. Keyword “default” is used to mark the default method
+
+Q14. Explain public static void main(String args[])
+Ans.Here public is an access modi􀃕er, which means that this method is accessible by any class.
+static – static keyword tells that this method can be accessed without creating the instance of the class.
+void – this main method returns no value.
+main – It is the name of the method.
+String args[] – The args is an array of String type. This contains the command line arguments that we can pass while running the program.
+
+Q23. What is static block?
+Ans.A static block gets executed at the time of class loading. They are used for initializing static variables.
+
+Q3. What’s the purpose of Static methods and static variables?
+Ans: When there is a requirement to share a method or a variable between multiple objects of a class instead of creating separate copies for each
+object, we use static keyword to make a method or variable shared for all object
+
+Q15. Can main() method in Java can return any data?
+Ans: In java, main() method can’t return any data and hence, it’s always declared with a void return type.
+
+Q21. Can we declare the main method of our class as private?
+Ans: In java, main method must be public static in order to run any application correctly. If main method is declared as private, developer won’t get
+any compilation error however, it will not get executed and will give a runtime error.
+
+Q22. How can we pass argument to a function by reference instead of pass by value?
+Ans: In java, we can pass argument to a function only by value and not by reference.
+
+Q41. How we can execute any code even before main method?
+Ans: If we want to execute any statements before even creation of objects at load time of class, we can use a static block of code in the class. Any
+statements inside this static block of code will get executed once at the time of loading the class even before creation of objects in the main method.
+
+Q47. Can we have two methods in a class with the same name?
+Ans: We can de􀃕ne two methods in a class with the same name but with di􀃡erent number/type of parameters. Which method is to get invoked will
+depend upon the parameters passed.
+For example in the class below we have two print methods with same name but di􀃡erent parameters. Depending upon the parameters, appropriate
+one will be called:
+Q61. A person says that he compiled a java class successfully without even having a main method in it? Is
+it possible?
+Ans: main method is an entry point of Java class and is required for execution of the program however; a class gets compiled successfully even if it
+doesn’t have a main method. It can’t be run though.
+
+Q62. Can we call a non-static method from inside a static method?
+Ans: Non-Static methods are owned by objects of a class and have object level scope and in order to call the non-Static methods from a static block
+(like from a static main method), an object of the class needs to be created 􀃕rst. Then using object reference, these methods can be invoked.
+
+
+Q79. Can we have any other return type than void for main method?
+Ans: No, Java class main method can have only void return type for the program to get successfully executed.
+Nonetheless , if you absolutely must return a value to at the completion of main method , you can use System.exit(int status)
+Q92. If an application has multiple classes in it, is it okay to have a main method in more than one class?
+Ans: If there is main method in more than one classes in a java application, it won’t cause any issue as entry point for any application will be a speci􀃕c
+class and code will start from the main method of that particular class only.
+
+15)What is method in java ?
+It contains the executable body that can be applied to the specific object of the class.
+Method includes method name, parameters or arguments and return type and a body of executable code
+
+17) Why main() method is public, static and void in java ?
+public : “public” is an access specifier which can be used outside the class. When main method is declared
+public it means it can be used outside class.
+static : To call a method we require object. Sometimes it may be required to call a method without the
+help of object. Then we declare that method as static. JVM calls the main() method without creating
+object by declaring keyword static.
+void : void return type is used when a method does’nt return any value . main() method does’nt return
+any value, so main() is declared as void.
+
+18) Explain about main() method in java ?
+Main() method is starting point of execution for all java applications.
+String args[] are array of string objects we need to pass from command line arguments.
+Every Java application must have atleast one main method.
+
+
+20) What is difference between length and length() method in java ?
+length() : In String class we have length() method which is used to return the number of characters in
+string.
+Ex : String str = “Hello World”;
+System.out.println(str.length());
+Str.length() will return 11 characters including space.
+length : we have length instance variable in arrays which will return the number of values or objects in
+array.
+For example :
+String days[]={” Sun”,”Mon”,”wed”,”thu”,”fri”,”sat”};
+Will return 6 since the number of values in days array is 6.

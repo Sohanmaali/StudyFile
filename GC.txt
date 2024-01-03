@@ -1,0 +1,9 @@
+5 Garbage Collectors 12
+5.1 What is the purpose of garbage collection in Java, and when is it used ? . . . . . . . . . . . . . . . . . . . . . . 12
+5.2 What does System.gc() and Runtime.gc() methods do ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+5.3 When is the finalize() called ? What is the purpose of finalization ? . . . . . . . . . . . . . . . . . . . . . . . . . 12
+5.4 If an object reference is set to null, will the Garbage Collector immediately free the memory held by that object ? 12
+5.5 What is structure of Java Heap ? What is Perm Gen space in Heap ? . . . . . . . . . . . . . . . . . . . . . . . . 12
+5.6 What is the difference between Serial and Throughput Garbage collector ? . . . . . . . . . . . . . . . . . . . . . 13
+5.7 When does an Object becomes eligible for Garbage collection in Java ? . . . . . . . . . . . . . . . . . . . . . . 13
+5.8 Does Garbage collection occur in permanent generation space in JVM ? . . . .

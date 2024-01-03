@@ -1,0 +1,21 @@
+32) What is ‘IS-A ‘ relationship in java?
+‘is a’ relationship is also known as inheritance. We can implement ‘is a’ relationship or inheritance in java
+using extends keyword. The advantage or inheritance or is a relationship is reusability of code instead of
+duplicating the code.
+Ex : Motor cycle is a vehicle
+Car is a vehicle Both car and motorcycle extends vehicle.
+33) What is ‘HAS A’’ relationship in java?
+‘Has a ‘ relationship is also known as “composition or Aggregation”. As in inheritance we have ‘extends’
+keyword we don’t have any keyword to implement ‘Has a’ relationship in java. The main advantage of
+‘Has-A‘ relationship in java code reusability.
+34) Difference between ‘IS-A’ and ‘HAS-A’ relationship in java?
+IS-A relationship HAS- A RELATIONSHIP
+Is a relationship also known as inheritance Has a relationship also known as composition or
+aggregation.
+For IS-A relationship we uses extends keyword For Has a relationship we use new keyword
+Ex : Car is a vehicle. Ex : Car has an engine. We cannot say Car is an
+engine
+The main advantage of inheritance is reusability of
+code
+The main advantage of has a relationship is
+reusability of code.

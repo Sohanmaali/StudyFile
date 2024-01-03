@@ -1,0 +1,8 @@
+Q4. What is data encapsulation and what’s its signi􀃕cance?
+Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a single unit.
+Encapsulation helps programmers to follow a modular approach for software development as each object has its own set of methods and variables
+and serves its functions independent of other objects. Encapsulation also serves data hiding purpose.
+
+16) What is encapsulation ?
+The process of wrapping or putting up of data in to a single unit class and
+keeps data safe from misuse is called encapsulation .

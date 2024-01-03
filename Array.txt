@@ -1,0 +1,7 @@
+Q18. What is an Array?
+Ans.An array is a collection (group) of 􀃕xed number of items. Array is a homogeneous data structure which means we can store multiple values of
+same type in an array but it can’t contain multiple values of di􀃡erent types. For example an array of int type can only hold integer values.
+
+Q91. Is there a way to increase the size of an array after its declaration?
+Ans: Arrays are static and once we have speci􀃕ed its size, we can’t change it. If we want to use such collections where we may require a change of size
+( no of items), we should prefer vector over array.

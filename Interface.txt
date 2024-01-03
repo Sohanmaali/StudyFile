@@ -147,3 +147,24 @@ invoked if we access it using the reference of Interface and the object of class
 	1) Interface should start with uppercase letters
 	2) Interfaces names should be adjectives
 37. Example : Runnable, Serializable, Marker, Cloneable
+
+Q22. What is the di􀃡erence between abstract class and interface?
+Ans.
+1) abstract class can have abstract and non-abstract methods. An interface can only have abstract methods.
+2) An abstract class can have static methods but an interface cannot have static methods.
+3) abstract class can have constructors but an interface cannot have constructors.
+
+Q76. Can we have static methods in an Interface?
+Ans: Static methods can’t be overridden in any class while any methods in an interface are by default abstract and are supposed to be implemented
+in the classes being implementing the interface. So it makes no sense to have static methods in an interface in Java.
+
+Q77. In a class implementing an interface, can we change the value of any variable de􀃕ned in the
+interface?
+Ans: No, we can’t change the value of any variable of an interface in the implementing class as all variables de􀃕ned in the interface are by default
+public, static and Final and 􀃕nal variables are like constants which can’t be changed later.
+
+
+178) Can we define static methods inside interface? ............................................................. 34
+7
+179) Define interface in java? .......................................................................................................... 34
+180) What is the purpose of interface?

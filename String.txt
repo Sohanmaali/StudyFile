@@ -388,3 +388,35 @@ StringBuffer meant for reference comparision .
 
 15. What is interning of String objects
 
+Q6. What is the di􀃡erence between StringBu􀃡er and String class ?
+Ans. A string bu􀃡er implements a mutable sequence of characters. A string bu􀃡er is like a String, but can be modi􀃕ed. At any point in time it contains
+some particular sequence of characters, but the length and content of the sequence can be changed through certain method calls.
+The String class represents character strings. All string literals in Java programs, such as “abc” are constant and implemented as instances of this class;
+their values cannot be changed after they are created.
+
+Q31. Is String a data type in java?
+Ans: String is not a primitive data type in java. When a string is created in java, it’s actually an object of Java.Lang.String class that gets created. After
+creation of this string object, all built-in methods of String class can be used on the string object.
+Update Your Skills form Our Experts: Core Java Online Training
+Q32. In the below example, how many String Objects are created?
+String s1=”I am Java Expert”;
+String s2=”I am C Expert”;
+String s3=”I am Java Expert”;
+Ans: In the above example, two objects of java.lang.String class are created. s1 and s3 are references to same object.
+Q33. Why Strings in Java are called as Immutable?
+Ans: In java, string objects are called immutable as once value has been assigned to a string, it can’t be changed and if changed, a new object is
+created.
+In below example, reference str refers to a string object having value “Value one”.
+String str=”Value One”;
+When a new value is assigned to it, a new String object gets created and the reference is moved to the new object.
+str=”New Value”;
+
+Q38. When a lot of changes are required in data, which one should be a preference to be used? String or
+StringBu􀃡er?
+Ans: Since StringBu􀃡ers are dynamic in nature and we can change the values of StringBu􀃡er objects unlike String which is immutable, it’s always a
+good choice to use StringBu􀃡er when data is being changed too much. If we use String in such a case, for every data change a new String object will
+be created which will be an extra overhead.
+Q95. String and StringBu􀃡er both represent String objects. Can we compare String and StringBu􀃡er in
+Java?
+Ans: Although String and StringBu􀃡er both represent String objects, we can’t compare them with each other and if we try to compare them, we get an
+error.

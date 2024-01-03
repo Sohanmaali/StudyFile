@@ -1,0 +1,8 @@
+Q17. What is Type casting in Java?
+Ans.When we assign a value of one data type to the di􀃡erent data type then these two data types may not be compatible and needs a conversion. If
+the data types are compatible (for example assigning int value to long) then java does automatic conversion and does not require casting. However if
+the data types are not compatible then they need to be casted for conversion.
+For example:
+//here in the brackets we have mentioned long keyword, this is casting
+double num = 10001.99;
+long num2 = (long)num;
